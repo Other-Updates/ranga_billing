@@ -122,7 +122,7 @@
     <div class="col-md-12 grid-margin stretch-card" id="expense_list_table">
         <div class="card">
             <div class="card-body">
-                <div class="reference-report">
+                <div class="reference-report table-responsive">
                     <table id="basicTable_call_back" class="table list-table display td-nowrap basictable">
                         <thead>
                             <tr>

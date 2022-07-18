@@ -81,7 +81,7 @@
                         <input class="form-control add_user_role" id="validationCustom03" type="text" name="user_role" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 d-none">
                         <label class="form-label" for="validationCustom03">User Role (Tamil)</label>
                         <input class="form-control add_user_role_tamil" id="validationCustom03" type="text" name="user_role_tamil" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
@@ -98,7 +98,7 @@
     </div>
 </div>
 <div class="modal fade" id="kt_modal_edit_user" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Edit User Role</h5>
@@ -109,12 +109,12 @@
                 <div class="modal-body scroll-y">                
                     <input type="hidden" name="user_id" value="<?php echo $this->session->userdata('LoggedId'); ?>">
                     <div class="row g-3">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <label class="form-label" for="validationCustom03">User Role</label>
                             <input class="form-control user_role" id="validationCustom03" type="text" name="user_role" placeholder="" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-none">
                             <label class="form-label" for="validationCustom03">User Role (Tamil)</label>
                             <input class="form-control user_role_tamil" id="validationCustom03" type="text" name="user_role_tamil" placeholder="" required="">
                             <div class="invalid-feedback">Field is required.</div>
