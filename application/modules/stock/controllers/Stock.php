@@ -343,7 +343,7 @@ class Stock extends MY_Controller {
                 if($this->session->userdata('UserRole') == 1){
                 $edit = "";
                 $delete = "";
-                $return = '<a href="'.base_url('stock/delivery_order_return/').$post->iDeliveryOrderId.'" data-id="'.$post->iDeliveryOrderId.'" class="action-icon" ><button style="font-size: 11px;padding: 0px 8px;" class="btn btn-success">Return</button></a></a>';
+                $return = '<a href="'.base_url('stock/delivery_order_return/').$post->iDeliveryOrderId.'" data-id="'.$post->iDeliveryOrderId.'" class="action-icon" ><button style="font-size: 11px;padding: 0px 8px;" class="btn btn-danger">Return</button></a></a>';
                 $view = '<a href="'.base_url('stock/view_stock/').$post->iDeliveryOrderId.'" class="action-icon" ><i class="fa fa-eye"></i></a>';
             }
             else{

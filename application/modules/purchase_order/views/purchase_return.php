@@ -148,11 +148,11 @@
                                             </td>
                                             <td scope="col">
                                                 <div class="row quantity-row">
-                                                    <div class="col-md-6 p-r-0">
+                                                    <div class="col-md-5 p-r-0">
                                                         <input class="form-control quantity quantity_cls_<?php echo $key ?>" id="validationCustomUsername" value="0" data-purchase-qty = <?php echo $purchase['iPurchaseQTY'] ?> data-warehouse-qty = <?php echo $purchase['warehouse_qty'] ?>  name="quantity[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  >                                                        
                                                     </div>
-                                                    <div class="col-md-3 p-0-5"><span class="label label-success ordered_qty available_qty" title="Ordered Quantity"> <?php echo $purchase['iPurchaseQTY'] ?> </span></div>          
-                                                    <div class="col-md-3 p-0-5"><span class="label label-success warehouse_qty available_qty" title="Available Quantity"> <?php echo $purchase['warehouse_qty'] ?> </span></div>
+                                                    <div class="col-md-3 p-0-5"><span class="label label-t-success ordered_qty available_qty" title="Ordered Quantity"> <?php echo $purchase['iPurchaseQTY'] ?> </span></div>          
+                                                    <div class="col-md-3 p-0-5"><span class="label label-t-success warehouse_qty available_qty" title="Available Quantity"> <?php echo $purchase['warehouse_qty'] ?> </span></div>
                                                     <input type="hidden" class="purchase_qty" name="purchase_qty[]" value="<?php echo $purchase['iPurchaseQTY'] ?>">  
                                                     <span class="ajax_response_result"></span>        
                                                     <div class="invalid-feedback">Field is required.</div>
@@ -240,7 +240,7 @@
                             </div> -->
                             <div class="card-footer text-end"> 
                                 <div class="col-sm-12 col-lg-12 col-xl-12">
-                                    <input type="submit" class="btn btn-success submit"> 
+                                    <input type="submit" class="btn btn-t-success submit"> 
                                     <a href="<?php base_url('purchase_order') ?>"><button class="btn btn-danger pull-left">Cancel</button></a>
                                 </div>
                             </div>

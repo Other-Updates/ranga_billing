@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
 .logo-wrapper .img-fluid{
-    width: 100px;
+    width: 230px;
     margin: 0 auto;
 }
 .action-icon {
@@ -532,4 +532,166 @@ table.dataTable input[type="checkbox"] {
     .row-8 .col-md-1 {width: 50%;}
     table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd{background: #fff;}
     table.bt.list-table tbody td.dataTables_empty::before {display: none;}
+}
+
+
+/* Ranga Hospital */
+.tamil-lang{
+    display: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+.a{
+position: absolute;
+top: -10px;
+width: 20px;
+height: 30px;
+right: 0px;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links li a span, .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li a svg, .page-wrapper.compact-wrapper .page-body-wrapper .according-menu i{
+    color:#fff
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li .sidebar-submenu li a{
+    color:#fff
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li .sidebar-submenu li a:after, .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li .mega-menu-container .mega-box .link-section .submenu-title h5:after{
+    border-color: #fff;
+}
+svg.feather.feather-grid.status_toggle.middle.sidebar-toggle {
+    color: #fff;
+}
+.page-header, .page-wrapper .page-header .header-wrapper .nav-right.right-header ul li .profile-media .media-body p, svg.feather.feather-maximize{
+    color:#fff;
+}
+.text-white{
+    stroke: #fff;
+}
+.toggle-sidebar{
+    top:25px
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li .sidebar-link.active{
+    background-color: #fff !important;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li .sidebar-link{
+    border-radius: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-wrapper, .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-icon-wrapper{
+    /* border-bottom: 2px solid #ffffff1f; */
+    padding-bottom: 3px;
+    box-shadow: rgb(255 255 255 / 20%) 0px 0px 10px;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .logo-icon-wrapper{
+    padding-bottom: 8px;
+}
+div#pageWrapper {
+    background: var(--theme-outline);
+}
+.datepicker--cell.-focus- {
+    background: var(--theme-deafult) !important;
+}
+.datepicker--cell.-current-.-focus- {
+    color: #fff !important;
+}
+.sidebar-link .icon{
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 10px;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.sidebar-link:hover .icon{
+    color: var(--theme-deafult);
+    background: #fff;
+    border-radius: 50px;
+    transition: all .5s ease;
+    box-shadow: rgba(57, 108, 240, 0.80) 0px 3px 8px;
+}
+a.sidebar-link.active .icon{
+    color: #fff;
+    background: var(--theme-deafult);
+    border-radius: 50px;
+    transition: all .5s ease;
+    box-shadow: rgba(57, 108, 240, 0.80) 0px 3px 8px;
+}
+.checkbox_animated:after{
+    border-color: var(--theme-deafult);
+}
+.btn-outline-t-success {
+    border-color: var(--theme-deafult);
+    color: var(--theme-deafult);
+    background-color: transparent;
+}
+.btn-outline-t-success:hover, .btn-outline-t-success:focus, .btn-outline-t-success:active, .btn-outline-t-success.active{
+    color: white;
+    background-color: var(--theme-deafult) !important;
+    border-color: var(--theme-deafult) !important;
+}
+.btn-t-success {
+    background-color: var(--theme-deafult) !important;
+    border-color: var(--theme-deafult) !important;
+    color: #fff !important;
+}
+.label-t-success {
+    background-color: var(--theme-deafult);
+}
+table tfoot td.total-bg, .total-bg, .basictable.table tfoot td.total-bg{
+    background-color: var(--theme-deafult);
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li{
+    padding-right: 0;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper .according-menu{
+    top:18px;
+}
+.toggle-sidebar:before{
+    top:-9px;
+    left:-10px;
+    background-color: rgba(248, 248, 248, 0.178);
+    border-radius: 100%;
+    z-index: 0;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li.sidebar-list:hover>a:hover{
+    background-color: rgb(240 240 242);
+}
+.b-r-50{
+    border-radius: 50px;
+}
+.card{
+    border-radius: 10px;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li .sidebar-submenu li a:hover, .page-wrapper.compact-wrapper .page-body-wrapper div.sidebar-wrapper .sidebar-main .sidebar-links .simplebar-wrapper .simplebar-mask .simplebar-content-wrapper .simplebar-content>li .sidebar-submenu li a:hover:after{
+    color: #fff;
+    border-color: #fff;
+    background: #ffffff59;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.sidebar-link{
+    margin-top: 5px;
+}
+.logo-wrapper, .logo-icon-wrapper{
+    background-color: var(--theme-dark-outline);
+    border-bottom: 1px solid var(--theme-dark-outline);
+}
+.header-wrapper{
+    background-color: var(--theme-dark-outline);
+}
+.sidebar-wrapper{
+    background-color: var(--theme-outline) !important;
+}
+thead tr th {
+    background-color: #6d7ae0 !important;
+    color: #fff !important;
+}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+    background-color: #f8f7ff;
+}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd:hover {
+    background-color: #f6f6f6;
 }

@@ -70,14 +70,24 @@
             <div class="modal-body scroll-y">
                 <input type="hidden" name="user_id" value="<?php echo $this->session->userdata('LoggedId'); ?>">
                 <div class="row g-3">
-                    <div class="col-md-6">
-                        <label class="form-label" for="validationCustom03">Customer Name</label>
-                        <input class="form-control add_name" id="validationCustom03" type="text" name="name" placeholder="" required="">
+                    <div class="col-md-12">
+                        <label class="form-label tamil-lang" for="validationCustom03">விநியோகஸ்தர் பெயர்</label>
+                        <input class="form-control add_name_tamil tamil-lang" id="validationCustom03" type="text" name="name" placeholder="">
+                        <div class="invalid-feedback">Field is required.</div>
+                    </div>
+                    <div class="col-md-12">
+                        <label class="form-label tamil-lang" for="validationCustom03">நிறுவனத்தின் பெயர்</label>
+                        <input class="form-control add_company_name_tamil tamil-lang" id="validationCustom03" type="text" name="company_name_tamil" placeholder="">
+                        <div class="invalid-feedback">Field is required.</div>
+                    </div>
+                    <div class="col-md-12">
+                        <label class="form-label tamil-lang" for="validationCustom03">முகவரி</label>
+                        <input class="form-control add_address_tamil tamil-lang" id="validationCustom03" type="text" name="address_tamil" placeholder="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label tamil-lang" for="validationCustom03">விநியோகஸ்தர் பெயர்</label>
-                        <input class="form-control add_name_tamil tamil-lang" id="validationCustom03" type="text" name="name" placeholder="" required="">
+                        <label class="form-label" for="validationCustom03">Customer Name</label>
+                        <input class="form-control add_name" id="validationCustom03" type="text" name="name" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
@@ -116,11 +126,6 @@
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label tamil-lang" for="validationCustom03">நிறுவனத்தின் பெயர்</label>
-                        <input class="form-control add_company_name_tamil tamil-lang" id="validationCustom03" type="text" name="company_name_tamil" placeholder="" required="">
-                        <div class="invalid-feedback">Field is required.</div>
-                    </div>
-                    <div class="col-md-6">
                         <label class="form-label" for="validationCustom04">Grade</label>
                         <select class="form-select add_grade" name ="grade" id="validationCustom04" required="">
                             <option selected="" disabled="" value="">Choose...</option>
@@ -147,11 +152,6 @@
                     <div class="col-md-6">
                         <label class="form-label" for="validationCustom03">Address</label>
                         <input class="form-control add_address" id="validationCustom03" type="text" name="address" placeholder="" required="">
-                        <div class="invalid-feedback">Field is required.</div>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label tamil-lang" for="validationCustom03">முகவரி</label>
-                        <input class="form-control add_address_tamil tamil-lang" id="validationCustom03" type="text" name="address_tamil" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
@@ -215,16 +215,26 @@
             <form class="needs-validation" novalidate="" method="post" enctype="multipart/form-data" >
                 <div class="modal-body scroll-y">                
                     <div class="row g-3">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <input type="hidden" class="customer_id" name="distributorid" value="">
-                            <label class="form-label name" for="validationCustom03">Customer Name</label>
-                            <input class="form-control edit_name" id="validationCustom03" type="text" name="name" placeholder="" required="">
+                            <label class="form-label name tamil-lang" for="validationCustom03">விநியோகஸ்தர் பெயர்</label>
+                            <input class="form-control edit_name_tamil tamil-lang" id="validationCustom03" type="text" name="name_tamil" placeholder="">
+                            <div class="invalid-feedback">Field is required.</div>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label tamil-lang" for="validationCustom03">நிறுவனத்தின் பெயர்</label>
+                            <input class="form-control edit_company_name_tamil tamil-lang" id="validationCustom03" type="text" name="company_name_tamil" placeholder="">
+                            <div class="invalid-feedback">Field is required.</div>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label tamil-lang" for="validationCustom03">முகவரி</label>
+                            <input class="form-control edit_address_tamil tamil-lang" id="validationCustom03" type="text" name="address_tamil" placeholder="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
                         <div class="col-md-6">
                             <input type="hidden" class="customer_id" name="distributorid" value="">
-                            <label class="form-label name tamil-lang" for="validationCustom03">விநியோகஸ்தர் பெயர்</label>
-                            <input class="form-control edit_name_tamil tamil-lang" id="validationCustom03" type="text" name="name_tamil" placeholder="" required="">
+                            <label class="form-label name" for="validationCustom03">Customer Name</label>
+                            <input class="form-control edit_name" id="validationCustom03" type="text" name="name" placeholder="" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
                         <div class="col-md-6">
@@ -267,11 +277,6 @@
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label tamil-lang" for="validationCustom03">நிறுவனத்தின் பெயர்</label>
-                            <input class="form-control edit_company_name_tamil tamil-lang" id="validationCustom03" type="text" name="company_name_tamil" placeholder="" required="">
-                            <div class="invalid-feedback">Field is required.</div>
-                        </div>
-                        <div class="col-md-6">
                         <label class="form-label" for="validationCustom04">Grade</label>
                         <select class="form-select edit_grade" name ="grade" id="validationCustom04" required="">
                             <option selected="" disabled="" value="">Choose...</option>
@@ -298,11 +303,6 @@
                         <div class="col-md-6">
                             <label class="form-label" for="validationCustom03">Address</label>
                             <input class="form-control edit_address" id="validationCustom03" type="text" name="address" placeholder="" required="">
-                            <div class="invalid-feedback">Field is required.</div>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label tamil-lang" for="validationCustom03">முகவரி</label>
-                            <input class="form-control edit_address_tamil tamil-lang" id="validationCustom03" type="text" name="address_tamil" placeholder="" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
                         <div class="col-md-6">

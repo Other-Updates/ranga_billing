@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-md-12">
                         <label class="form-label tamil-lang" for="validationCustom03">வகை பெயர்</label>
-                        <input class="form-control add_category_name_tamil tamil-lang" id="validationCustom03" type="text" name="category_name_tamil" placeholder="" required="">
+                        <input class="form-control add_category_name_tamil tamil-lang" id="validationCustom03" type="text" name="category_name_tamil" placeholder="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-4">
@@ -124,7 +124,7 @@
                         <div class="col-md-12">
                             <input type="hidden" class="distributorid" name="distributorid" value="">
                             <label class="form-label tamil-lang" for="validationCustom03">வகை பெயர்</label>
-                            <input class="form-control category_name_tamil tamil-lang" id="validationCustom03" type="text" name="category_name_tamil" placeholder="" required="">
+                            <input class="form-control category_name_tamil tamil-lang" id="validationCustom03" type="text" name="category_name_tamil" placeholder="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
                         <div class="col-md-4">

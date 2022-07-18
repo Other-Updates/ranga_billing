@@ -89,7 +89,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" name="cancel" id="cancel" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" name="submit" id="import" class="btn btn-success">Submit</button>
+                    <button type="submit" name="submit" id="import" class="btn btn-t-success">Submit</button>
                 </div>
 
             </form>

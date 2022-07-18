@@ -86,7 +86,7 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label tamil-lang" for="validationCustom03">கிளை பெயர்</label>
-                        <input class="form-control add_branch_tamil tamil-lang" id="validationCustom03" type="text" name="branch_name_tamil" placeholder="" required="">
+                        <input class="form-control add_branch_tamil tamil-lang" id="validationCustom03" type="text" name="branch_name_tamil" placeholder="" >
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
@@ -160,7 +160,7 @@
                     <div class="col-md-6">
                         <input type="hidden" class="distributorid" name="distributorid" value="">
                         <label class="form-label tamil-lang" for="validationCustom03">கிளை பெயர்</label>
-                        <input class="form-control branch_name_tamil tamil-lang" id="validationCustom03" type="text" name="branch_name_tamil" placeholder="" required="">
+                        <input class="form-control branch_name_tamil tamil-lang" id="validationCustom03" type="text" name="branch_name_tamil" placeholder="" >
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">

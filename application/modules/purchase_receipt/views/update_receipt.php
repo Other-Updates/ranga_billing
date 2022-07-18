@@ -287,7 +287,7 @@
                     </td>
                 </tr>
                 <tr><td class="action-btn-align"  colspan="4"> 
-                        <input  type="submit" class="btn btn-success" value="Pay" id="pay" tabindex="1"/>
+                        <input  type="submit" class="btn btn-t-success" value="Pay" id="pay" tabindex="1"/>
                         <a class="btn btn-danger back pull-left" href="<?php echo $this->config->item('base_url') ?>purchase_receipt/receipt_list"> Back </a>
                         
                 </td></tr>

@@ -208,7 +208,7 @@
                         </div>
                     </div>
                     <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12">
-                        <input type="submit" name="submit" class="btn btn-success" value="Save" id="submit" tabindex="8">
+                        <input type="submit" name="submit" class="btn btn-t-success" value="Save" id="submit" tabindex="8">
                         <a href="<?php echo $this->config->item('base_url') . 'expenses/expenses_list' ?>" class="btn btn-danger  pull-left">Back</a>
                     </div></div>
                     

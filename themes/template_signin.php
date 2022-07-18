@@ -12,7 +12,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="<?php echo $theme_path ?>/assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="<?php echo $theme_path ?>/assets/images/favicon.png" type="image/x-icon">
-    <title>Coolincool Masala</title>
+    <title>Ranga Hospital</title>
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo $theme_path ?>/assets/css/font-awesome.css">

@@ -69,7 +69,7 @@
                     </div>
                     <div class="col-md-12">
                         <label class="form-label tamil-lang" for="validationCustom03">பிராண்ட் பெயர்</label>
-                        <input class="form-control add_brand_tamil tamil-lang" id="validationCustom03" type="text" name="brand_name_tamil" placeholder="" required="">
+                        <input class="form-control add_brand_tamil tamil-lang" id="validationCustom03" type="text" name="brand_name_tamil" placeholder="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                 </div>
@@ -93,17 +93,17 @@
                 <div class="modal-body scroll-y">                
                     <input type="hidden" name="brand_id" class="brand_id">
                     <div class="row g-3">
+                        <div class="col-md-12">
+                            <label class="form-label tamil-lang" for="validationCustom03">பிராண்ட் பெயர்</label>
+                            <input class="form-control brand_name_tamil tamil-lang" id="validationCustom03" type="text" name="brand_name_tamil" placeholder="">
+                            <div class="invalid-feedback">Field is required.</div>
+                        </div>
                         <div class="col-md-6">
                             <label class="form-label" for="validationCustom03">Brand Name</label>
                             <input class="form-control brand_name" id="validationCustom03" type="text" name="brand_name" placeholder="" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label tamil-lang" for="validationCustom03">பிராண்ட் பெயர்</label>
-                            <input class="form-control brand_name_tamil tamil-lang" id="validationCustom03" type="text" name="brand_name_tamil" placeholder="" required="">
-                            <div class="invalid-feedback">Field is required.</div>
-                        </div>
-                        <div class="col">
                             <label class="form-label" for="validationCustom03">Status</label>
                             <label class="d-block" for="edo-ani">
                             <input class="radio_animated radio radio_active" id="edo-ani" type="radio" value='Active' name="status" checked="" data-original-title="" title="">Active

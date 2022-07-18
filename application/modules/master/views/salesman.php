@@ -74,7 +74,7 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label tamil-lang" for="validationCustom03">பெயர்</label>
-                        <input class="form-control add_name_tamil tamil-lang" id="validationCustom03" type="text" name="name_tamil" placeholder="" required="">
+                        <input class="form-control add_name_tamil tamil-lang" id="validationCustom03" type="text" name="name_tamil" placeholder="" >
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
@@ -139,7 +139,7 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label tamil-lang" for="validationCustom03">முகவரி</label>
-                        <input class="form-control add_address_tamil tamil-lang" id="validationCustom03" type="text" name="address_tamil" placeholder="" required="">
+                        <input class="form-control add_address_tamil tamil-lang" id="validationCustom03" type="text" name="address_tamil" placeholder="" >
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
@@ -180,7 +180,7 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label tamil-lang" for="validationCustom03">பெயர்</label>
-                        <input class="form-control edit_name_tamil tamil-lang" id="validationCustom03" type="text" name="name" placeholder="" required="">
+                        <input class="form-control edit_name_tamil tamil-lang" id="validationCustom03" type="text" name="name" placeholder="" >
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
@@ -245,7 +245,7 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label tamil-lang" for="validationCustom03">முகவரி</label>
-                        <input class="form-control edit_address_tamil tamil-lang" id="validationCustom03" type="text" name="address_tamil" placeholder="" required="">
+                        <input class="form-control edit_address_tamil tamil-lang" id="validationCustom03" type="text" name="address_tamil" placeholder="" >
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">

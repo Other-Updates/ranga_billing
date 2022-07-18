@@ -110,7 +110,7 @@
                                                 <th width="6%" class="text-center" scope="col">SGST</th>
                                                 <th width="6%" class="text-center" scope="col">IGST</th>
                                                 <th width="10%" class="text-right" scope="col">Net&nbsp;Value</th>
-                                                <th width="4%" scope="col" class="text-center"><b class="wnone">Remove</b> <button class="btn btn-success btn-sm" id="add"><i class="icofont icofont-plus"></i></button><input type="hidden" name="sales_count" class="sales_count" value="<?php echo count($purchase_order['purchase_details']) ?>"></th>
+                                                <th width="4%" scope="col" class="text-center"><b class="wnone">Remove</b> <button class="btn btn-t-success btn-sm" id="add"><i class="icofont icofont-plus"></i></button><input type="hidden" name="sales_count" class="sales_count" value="<?php echo count($purchase_order['purchase_details']) ?>"></th>
                                             </tr>
                                         </thead>                                        
                                         <?php foreach($purchase_order['purchase_details'] as $key=>$purchase){ ?>
@@ -221,7 +221,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><a href="<?php echo base_url('purchase_order') ?>"><input type="submit" class="btn btn-success"> <input class="btn btn-danger pull-left" type="button" value="Cancel"></a></div></div>
+                            <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><a href="<?php echo base_url('purchase_order') ?>"><input type="submit" class="btn btn-t-success"> <input class="btn btn-danger pull-left" type="button" value="Cancel"></a></div></div>
                         </div>                        
                     </div>
                     <!-- <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><input type="submit" class="btn btn-success"> <input class="btn btn-danger pull-left" type="reset" value="Cancel"></div></div> -->

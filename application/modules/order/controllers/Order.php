@@ -40,7 +40,7 @@ class Order extends MY_Controller {
             if($post->eDeliveryStatus == "Delivered"){
                 $edit = "";
                 $delete = "";
-                $return = '<a href="'.base_url('order/sale_order_return/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><button style="font-size: 11px;padding: 0px 8px;" class="btn btn-success">Return</button></a></a>';
+                $return = '<a href="'.base_url('order/sale_order_return/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><button style="font-size: 11px;padding: 0px 8px;" class="btn btn-danger">Return</button></a></a>';
             }if($post->eDeliveryStatus == "Cancelled"){
                 $edit = "";
                 $delete = "";

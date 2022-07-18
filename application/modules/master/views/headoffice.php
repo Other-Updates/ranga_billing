@@ -69,7 +69,7 @@
                     </div>
                     <div class="col-md-6">
                         <label class="form-label tamil-lang" for="validationCustom03">தலைமை அலுவலகத்தின் பெயர்</label>
-                        <input class="form-control add_headoffice_name_tamil tamil-lang" id="validationCustom03" type="text" name="headoffice_name_tamil" placeholder="" required="">
+                        <input class="form-control add_headoffice_name_tamil tamil-lang" id="validationCustom03" type="text" name="headoffice_name_tamil" placeholder="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
@@ -123,7 +123,7 @@
                         <div class="col-md-6">
                             <input type="hidden" class="distributorid" name="distributorid" value="">
                             <label class="form-label tamil-lang" for="validationCustom03">தலைமை அலுவலகத்தின் பெயர்</label>
-                            <input class="form-control headoffice_name_tamil tamil-lang" id="validationCustom03" type="text" name="headoffice_name_tamil" placeholder="" required="">
+                            <input class="form-control headoffice_name_tamil tamil-lang" id="validationCustom03" type="text" name="headoffice_name_tamil" placeholder="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
                         <div class="col-md-6">

@@ -63,16 +63,16 @@
             <div class="modal-body scroll-y">                
                 <input type="hidden" name="user_id" value="<?php echo $this->session->userdata('LoggedId'); ?>">
                 <div class="row g-3">
+                    <div class="col-md-12">
+                        <label class="form-label tamil-lang" for="validationCustom03">வழங்குபவர் பெயர்</label>
+                        <input class="form-control add_supplier_tamil tamil-lang" id="validationCustom03" type="text" name="supplier_name" placeholder="" >
+                        <div class="invalid-feedback">Field is required.</div>
+                    </div>
                     <div class="col-md-6">
                         <label class="form-label" for="validationCustom03">Supplier Name</label>
                         <input class="form-control add_supplier" id="validationCustom03" type="text" name="supplier_name" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                         <span class="ajax_response_result"></span>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label tamil-lang" for="validationCustom03">வழங்குபவர் பெயர்</label>
-                        <input class="form-control add_supplier_tamil tamil-lang" id="validationCustom03" type="text" name="supplier_name" placeholder="" required="">
-                        <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
                         <label class="form-label" for="validationCustom03">GSTIN Number</label>
@@ -120,16 +120,16 @@
                 <div class="modal-body scroll-y">                
                 <input type="hidden" name="user_id" value="<?php echo $this->session->userdata('LoggedId'); ?>">
                 <div class="row g-3">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <input type="hidden" class="distributorid" name="distributorid" value="">
-                        <label class="form-label" for="validationCustom03">Supplier Name</label>
-                        <input class="form-control supplier_name" id="validationCustom03" type="text" name="supplier_name" placeholder="" required="">
+                        <label class="form-label tamil-lang" for="validationCustom03">வழங்குபவர் பெயர்</label>
+                        <input class="form-control supplier_name_tamil tamil-lang" id="validationCustom03" type="text" name="supplier_name_tamil" placeholder="" >
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
                         <input type="hidden" class="distributorid" name="distributorid" value="">
-                        <label class="form-label tamil-lang" for="validationCustom03">வழங்குபவர் பெயர்</label>
-                        <input class="form-control supplier_name_tamil tamil-lang" id="validationCustom03" type="text" name="supplier_name_tamil" placeholder="" required="">
+                        <label class="form-label" for="validationCustom03">Supplier Name</label>
+                        <input class="form-control supplier_name" id="validationCustom03" type="text" name="supplier_name" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
@@ -156,7 +156,7 @@
                         <div class="invalid-feedback">Field is required.</div>
                         <span class="ajax_response_result"></span>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6">
                         <label class="form-label" for="validationCustom03">Status</label>
                         <label class="d-block" for="edo-ani">
                         <input class="radio_animated radio radio_active" id="edo-ani" type="radio" value='Active' name="status" checked="" data-original-title="" title="">Active

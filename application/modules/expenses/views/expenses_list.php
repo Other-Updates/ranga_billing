@@ -111,7 +111,7 @@
                         </div>
                         <div class="col-md-2">
                             <label class="col-md-12 mnone"><br></label>
-                            <a id='search' class="btn btn-success" title="Search"><i class="icofont icofont-ui-search"></i></a>
+                            <a id='search' class="btn btn-t-success" title="Search"><i class="icofont icofont-ui-search"></i></a>
                             <a class="btn btn-danger" id='clear' title="Clear"><i class="icofont icofont-refresh"></i></a>
                         </div>
                     </div>
@@ -310,7 +310,7 @@
         footer: true,
         text: '<i class="fa fa-file-excel-o"></i> Excel',
         titleAttr: 'Export to Excel',
-        title: 'Coolincool Masala Expense Report',
+        title: 'Ranga Hospital Expense Report',
         exportOptions: {
             columns: ':not(:last-child)',
         }
@@ -320,7 +320,7 @@
         footer: true,
         text: '<i class="fa fa-file-pdf-o"></i> PDF',
         titleAttr: 'PDF',
-        title: 'Coolincool Masala Expense Report',
+        title: 'Ranga Hospital Expense Report',
         exportOptions: {
             columns: ':not(:last-child)',
         },

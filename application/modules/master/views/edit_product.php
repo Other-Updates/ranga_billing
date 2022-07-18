@@ -26,15 +26,15 @@
             <div class="card"> 
                 <input type="hidden" value="<?php echo $product['iProductId'] ?>" name="product_id">
                 <div class="modal-body">
-                    <div class="row g-3">               
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <label class="form-label tamil-lang" for="validationCustom01">பொருளின் பெயர்</label>
+                            <input class="form-control tamil-lang" id="validationCustom01" type="text" name="product_name_tamil" value="<?php echo $product['vProductName_Tamil'] ?>">
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>         
                         <div class="col-md-6">
                             <label class="form-label" for="validationCustom01">Product Name</label>
                             <input class="form-control" id="validationCustom01" type="text" name="product_name" value="<?php echo $product['vProductName'] ?>" required="">
-                            <div class="valid-feedback">Looks good!</div>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label tamil-lang" for="validationCustom01">பொருளின் பெயர்</label>
-                            <input class="form-control tamil-lang" id="validationCustom01" type="text" name="product_name_tamil" value="<?php echo $product['vProductName_Tamil'] ?>" required="">
                             <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-6">
@@ -104,7 +104,7 @@
                         </div>  
                         <div class="col-md-12">
                             <label class="form-label tamil-lang" for="validationCustom03">விளக்கம்</label>
-                            <textarea class="form-control tamil-lang" id="validationCustom03" type="text" name="description_tamil" placeholder="" required=""><?php echo $product['vDescription_Tamil'] ?></textarea>
+                            <textarea class="form-control tamil-lang" id="validationCustom03" type="text" name="description_tamil" placeholder=""><?php echo $product['vDescription_Tamil'] ?></textarea>
                             <div class="invalid-feedback">Field is required.</div>
                         </div>                     
                     </div>
@@ -150,7 +150,7 @@
                             </div>
                             <!-- Buttons -->
                             <div data-type="image-buttons" class="row justify-content-center mt-2">
-                                <button data-type="add" class="btn btn-outline-success" type="button"><span class="fa fa-camera mr-2"></span>Add</button>
+                                <button data-type="add" class="btn btn-outline-t-success" type="button"><span class="fa fa-camera mr-2"></span>Add</button>
                                 <button data-type="btn-modify" type="button" class="btn btn-outline-success m-0" data-toggle="popover" data-placement="right" style="display:none;">
                                 <span class="fa fa-edit mr-2"></span>Modify
                                 </button>
@@ -285,11 +285,11 @@
                                     <thead>
                                         <tr>
                                             <!-- <th scope="col">#</th> -->
-                                            <th width="20%" scope="col">Unit</th>
-                                            <th width="20%" class="" scope="col">Price</th>
-                                            <th width="20%" class="" scope="col">Pack</th>
-                                            <th width="20%" class="text-right" scope="col">Grade</th>
-                                            <th width="10%" scope="col"><button type="button" class="btn btn-success btn-sm" id="add"><i class="icofont icofont-plus"></i></button></th>
+                                            <th width="30%" scope="col">Unit</th>
+                                            <th width="30%" class="" scope="col">Price</th>
+                                            <th width="30%" class="" scope="col">Pack</th>
+                                            <th width="20%" class="d-none" scope="col">Grade</th>
+                                            <th width="10%" scope="col"><button type="button" class="btn btn-t-success btn-sm" id="add"><i class="icofont icofont-plus"></i></button></th>
                                         </tr>
                                     </thead>
                                     <tbody class="price_details">
@@ -319,7 +319,7 @@
                                                 <div class="invalid-feedback">Field is required.</div>
                                                 </div>
                                             </td>
-                                            <td scope="col">
+                                            <td scope="col" class="d-none">
                                                 <div class="">
                                                 <select class="form-select grade_clone product_grade" name="grade[]" id="validationCustom04">
                                                     <option selected="" disabled="" value="">Choose...</option>
@@ -353,7 +353,7 @@
                                             <th width="20%" scope="col">Branch</th>
                                             <th width="13%" scope="col">Unit</th>
                                             <th width="8%" class="text-right" scope="col">Minimum Quantity</th>
-                                            <th width="4%" scope="col"><button type="button" class="btn btn-success btn-sm" id="add_min_qty"><i class="icofont icofont-plus"></i></button></th>
+                                            <th width="4%" scope="col"><button type="button" class="btn btn-t-success btn-sm" id="add_min_qty"><i class="icofont icofont-plus"></i></button></th>
                                         </tr>
                                     </thead>
                                     <tbody class="table_minqty_details">

@@ -40,7 +40,7 @@ class Purchase_order extends MY_Controller {
             if($post->eDeliveryStatus == "Delivered"){
                 $edit = '';
                 $delete = '';
-                $return = '<a href="'.base_url('purchase_order/purchase_order_return/').$post->iPurchaseOrderId.'" data-id="'.$post->iPurchaseOrderId.'" class="action-icon" ><button style="font-size: 11px;padding: 0px 8px;" class="btn btn-success">Return</button></a>';
+                $return = '<a href="'.base_url('purchase_order/purchase_order_return/').$post->iPurchaseOrderId.'" data-id="'.$post->iPurchaseOrderId.'" class="action-icon" ><button style="font-size: 11px;padding: 0px 8px;" class="btn btn-danger">Return</button></a>';
             }
             if($post->eDeliveryStatus == "Cancelled"){
                 $edit = '';

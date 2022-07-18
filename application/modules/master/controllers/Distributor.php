@@ -11,7 +11,6 @@ class Distributor extends MY_Controller {
     }
 
 	public function index(){
-
         $data['title'] = 'distributor';
         $data['user'] = $this->distributor_model->get_all_users();
         $data['categories'] = $this->distributor_model->get_categories();
