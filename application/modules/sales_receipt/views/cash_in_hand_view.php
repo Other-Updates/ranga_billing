@@ -354,7 +354,7 @@
                     html += '<td class="total_amt text-right">'+total+'</td>';
                     html += '<td class="remark">'+value.tRemarks+'</td>';
                     html += '<td class="paid_date text-center">'+moment(value.dPaidDate).format('DD-MM-YYYY')+'</td>';
-                    html += '<td class="view text-center"><a href="<?php echo base_url() ?>sales_receipt/view_receipt/'+value.receipt_id+'" class="action-icon" title="View" data-original-title="View" ><span class="fa fa-eye"></span></a></td></tr>';
+                    html += '<td class="view text-center"><a href="<?php echo base_url() ?>sales_receipt/view_receipt/'+value.receipt_id+'" class="action-icon" title="View" data-original-title="View" ><span class="fa fa-eye fs-5"></span></a></td></tr>';
                     total_cash += total;
                     i++;
                 })

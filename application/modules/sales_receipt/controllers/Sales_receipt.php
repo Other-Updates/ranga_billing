@@ -142,10 +142,10 @@ class Sales_receipt extends MX_Controller {
             $edit = $this->config->item('base_url') . 'sales_receipt/manage_receipt/' . $val['iSalesOrderId'];
             $view = $this->config->item('base_url') . 'sales_receipt/view_receipt/' . $val['iSalesOrderId'];
             if($this->session->userdata('UserRole') == 1)
-            $edit_url = '<a href="' . $edit . '" data-toggle="tooltip" class="action-icon" title="Edit" data-original-title="Edit"><span class="icofont icofont-ui-edit"></span></a>';
+            $edit_url = '<a href="' . $edit . '" data-toggle="tooltip" class="action-icon" title="Edit" data-original-title="Edit"><span class="fa fa-edit fs-5"></span></a>';
             else
-            $edit_url ='<a href="' . $edit . '" data-toggle="tooltip" class="action-icon" title="Edit" data-original-title="Edit"><span class="icofont icofont-ui-edit"></span></a>';
-            $views_url = '<a href="' . $view . '" data-toggle="tooltip" class="action-icon" title="View" data-original-title="View" ><span class="fa fa-eye"></span></a>';
+            $edit_url ='<a href="' . $edit . '" data-toggle="tooltip" class="action-icon" title="Edit" data-original-title="Edit"><span class="fa fa-edit fs-5"></span></a>';
+            $views_url = '<a href="' . $view . '" data-toggle="tooltip" class="action-icon" title="View" data-original-title="View" ><span class="fa fa-eye fs-5"></span></a>';
 
             $no++;
             $row = array();
@@ -548,7 +548,7 @@ class Sales_receipt extends MX_Controller {
         $data = array();
         $no = $_POST['start'];
         foreach ($list as $val) {
-            $views_url = '<a href="#" data-id="'.$val['iSalesmanId'].'" data-toggle="tooltip" class="action-icon view_cashinfo" title="View" data-original-title="View" ><span class="fa fa-eye"></span></a>';
+            $views_url = '<a href="#" data-id="'.$val['iSalesmanId'].'" data-toggle="tooltip" class="action-icon view_cashinfo" title="View" data-original-title="View" ><span class="fa fa-eye fs-5"></span></a>';
             $no++;
             $row = array();
             $row[] = $no;

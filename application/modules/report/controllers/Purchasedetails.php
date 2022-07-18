@@ -24,7 +24,7 @@ class Purchasedetails extends MY_Controller {
         $input_data = $this->input->post();
         $list=$this->purchasedetails_model->purchasedetail_list($input_data);
         foreach ($list as $key=>$post) {
-            $view = '<a href="'.base_url('purchase_order/view_purchase_order/').$post->iPurchaseOrderId.'" data-id="'.$post->iPurchaseOrderId.'" class="action-icon" ><i class="fa fa-eye"></i></a>';
+            $view = '<a href="'.base_url('purchase_order/view_purchase_order/').$post->iPurchaseOrderId.'" data-id="'.$post->iPurchaseOrderId.'" class="action-icon" ><i class="fa fa-eye fs-5"></i></a>';
             $row = array();
             $row[] = $post->vPurchaseOrderNo;   
             $row[] = $post->vSupplierName;

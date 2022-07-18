@@ -60,9 +60,9 @@
                                                 <td><?php echo ucfirst($list['sub_category']); ?></td>
                                                 <td class="action-btn-align">
                                                     <a id="<?php echo $list['id']; ?>" class="action-icon kt_modal_edit_cat" title="Edit">
-                                                    <i class="icofont icofont-ui-edit"></i></a>&nbsp;&nbsp;
+                                                    <i class="fa fa-edit fs-5"></i></a>&nbsp;&nbsp;
                                                     <a name="delete" class="action-icon delete_row" delete_id="<?php echo $list['id']; ?>" title="Delete">
-                                                    <i class="icofont icofont-ui-delete"></i></a>
+                                                    <i class="fa fa-remove fs-5"></i></a>
                                                 </td>
                                             </tr>
                                         <?php

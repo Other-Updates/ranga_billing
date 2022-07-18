@@ -33,9 +33,9 @@ class Order extends MY_Controller {
             // $converted_ordered_date = date('d-m-Y ', $order_date_timestamp);   
             // $created_date_timestamp = strtotime($post->salecreateddate);
             // $converted_created_date = date('d-m-Y ', $order_date_timestamp);   
-            $delete = '<a href="" data-id="'.$post->iSalesOrderId.'" class="action-icon removeAttr " ><i class="icofont icofont-ui-delete"></i></a>';
-            $edit = '<a href="'.base_url('order/edit_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="icofont icofont-ui-edit"></i></a>';
-            $view = '<a href="'.base_url('order/view_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-eye"></i></a>';
+            $delete = '<a href="" data-id="'.$post->iSalesOrderId.'" class="action-icon removeAttr " ><i class="fa fa-remove fs-5"></i></a>';
+            $edit = '<a href="'.base_url('order/edit_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-edit fs-5"></i></a>';
+            $view = '<a href="'.base_url('order/view_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-eye fs-5"></i></a>';
             $return = "";
             if($post->eDeliveryStatus == "Delivered"){
                 $edit = "";

@@ -26,7 +26,7 @@ class Salesdetails extends MY_Controller {
         // echo "<pre>**";print_r($input_data);exit;
         $list=$this->salesdetails_model->salesdetail_list($input_data);
         foreach ($list as $key=>$post) {
-            $view = '<a href="'.base_url('order/view_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-eye"></i></a>';
+            $view = '<a href="'.base_url('order/view_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-eye fs-5"></i></a>';
             $row = array();
             $row[] = $post->vSalesOrderNo;   
             $row[] = $post->vCustomerName;

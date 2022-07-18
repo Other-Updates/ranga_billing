@@ -157,16 +157,16 @@ class Expenses extends MX_Controller
         $no = $_POST['start'];
         foreach ($list as $ass) {
             if($this->session->userdata('UserRole') == 1 || $this->session->userdata('UserRole') == 2) {
-                $edit_row = '<a class="action-icon" href="' . base_url() . 'expenses/edit/' . $ass->id . '"><i class="icofont icofont-ui-edit"></i></a>';
+                $edit_row = '<a class="action-icon" href="' . base_url() . 'expenses/edit/' . $ass->id . '"><i class="fa fa-edit fs-5"></i></a>';
             } else {
-                $edit_row = '<a class="action-icon alerts" href=""><i class="icofont icofont-ui-edit"></i></a>';
+                $edit_row = '<a class="action-icon alerts" href=""><i class="fa fa-edit fs-5"></i></a>';
             }
             $delete_row = '';
             if($this->session->userdata('UserRole') == 1 || $this->session->userdata('UserRole') == 2) {
                 // $delete_row = '<a class="action-icon" href="' . base_url() . 'expenses/delete/'  . $ass->id . '"><i class="fa fa-trash"></i></a>';
-                $delete_row = '<a  id="' . $ass->id . '" class="delete_row deleteexp action-icon" delete_id="' . $ass->id . '"><i class="icofont icofont-ui-delete"></i></a>';
+                $delete_row = '<a  id="' . $ass->id . '" class="delete_row deleteexp action-icon" delete_id="' . $ass->id . '"><i class="fa fa-remove fs-5"></i></a>';
             } else {
-                $delete_row = '<a class="alerts action-icon" ><i class="icofont icofont-ui-delete"></i></a>';
+                $delete_row = '<a class="alerts action-icon" ><i class="fa fa-remove fs-5"></i></a>';
             }
             $no++;
             $row = array();

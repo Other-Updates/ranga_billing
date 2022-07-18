@@ -141,8 +141,8 @@ class Purchase_receipt extends MX_Controller {
             $edit = $this->config->item('base_url') . 'purchase_receipt/manage_receipt/' . $val['iPurchaseOrderId'];
             $view = $this->config->item('base_url') . 'purchase_receipt/view_receipt/' . $val['iPurchaseOrderId'];
 
-            $edit_url = '<a href="' . $edit . '" data-toggle="tooltip" class="action-icon" title="Edit" data-original-title="Edit"><span class="icofont icofont-ui-edit"></span></a>';
-            $views_url = '<a href="' . $view . '" data-toggle="tooltip" class="action-icon" title="View" data-original-title="View" ><span class="fa fa-eye"></span></a>';
+            $edit_url = '<a href="' . $edit . '" data-toggle="tooltip" class="action-icon" title="Edit" data-original-title="Edit"><span class="fa fa-edit fs-5"></span></a>';
+            $views_url = '<a href="' . $view . '" data-toggle="tooltip" class="action-icon" title="View" data-original-title="View" ><span class="fa fa-eye fs-5"></span></a>';
 
             $no++;
             $row = array();

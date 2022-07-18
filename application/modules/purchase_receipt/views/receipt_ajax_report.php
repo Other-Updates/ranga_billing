@@ -122,7 +122,7 @@
 									if($val['complete_status']==0)
 									{
 									?>
-                                    	<a href="<?php echo $this->config->item('base_url').'sales_receipt/update_receipt/'.$val['id']?>" data-toggle="tooltip" class="fa fa-edit tooltips" title="" data-original-title="Edit">&nbsp;</a>
+                                    	<a href="<?php echo $this->config->item('base_url').'sales_receipt/update_receipt/'.$val['id']?>" data-toggle="tooltip" class="fa fa-edit fs-5 tooltips" title="" data-original-title="Edit">&nbsp;</a>
                                         <?php }?>
                                       
                                     </td>
