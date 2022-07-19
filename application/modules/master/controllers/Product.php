@@ -152,7 +152,7 @@ class Product extends MY_Controller {
                 if(file_exists(FCPATH."uploads/".$img[0]) && $post->vImages != null){
             $row[] = '<img src="'.base_url().'uploads/'.$img[0].'" class="img-thumbnail" width="50" height="50" />';
             }else{
-                $row[] = '<img src="'.base_url().'uploads/logo/logo.png" class="img-thumbnail" width="50" height="50" />';
+                $row[] = '<img src="'.base_url().'uploads/logo/logo-icon.png" class="img-thumbnail" width="32" height="32" />';
             }
             $row[] = $post->vProductName;               
             $row[] = $post->vCategoryName;

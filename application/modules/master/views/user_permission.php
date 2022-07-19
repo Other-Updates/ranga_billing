@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <?php $sno = 1; ?>
-                            <table class="display table table-dashed user-permission mb-3" id="basic">
+                            <table class="display table table-striped user-permission mb-3" id="basic">
                                 <thead>
                                     <tr>
                                     <th>Modules</th>                            

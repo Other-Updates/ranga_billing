@@ -98,7 +98,7 @@
                         <div class="row">
                             <div class="col-sm-12 col-lg-12 col-xl-12">
                                 <div class="add-sales-table">
-                                    <button class="btn btn-success wnone mobile-add-btn" id="add">Add Product</button>
+                                    <button class="btn btn-t-success wnone mobile-add-btn" id="add">Add Product</button>
                                     <table class="table delivery-order basictable" id="table">
                                         <thead>
                                             <tr>

@@ -588,7 +588,7 @@ svg.feather.feather-grid.status_toggle.middle.sidebar-toggle {
     padding-bottom: 8px;
 }
 div#pageWrapper {
-    background: var(--theme-outline);
+    background: none;
 }
 .datepicker--cell.-focus- {
     background: var(--theme-deafult) !important;
@@ -717,4 +717,15 @@ table.dataTable.table thead th.sorting:after, table.dataTable.table thead th.sor
 }
 .datafeather:hover{
     stroke: var(--theme-deafult);
+}
+i.fa.fs-5 {
+    font-size: 15px !important;
+}
+@media (min-width: 768px) {
+    .w-lg-100{
+        width: 100%;
+    }
+    .stat-cards-info__progress{
+        margin: auto;
+    }
 }

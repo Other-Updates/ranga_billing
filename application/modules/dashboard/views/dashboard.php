@@ -2,7 +2,7 @@
     $theme_path = $this->config->item('theme_locations');
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo $theme_path ?>/assets/css/vendors/chartist.css">
-
+<link rel="stylesheet" href="<?php echo $theme_path ?>/assets/css/style.min.css">
 <div class="container-fluid">        
     <div class="page-title">
         <div class="row">
@@ -21,8 +21,166 @@
 </div>
 
 <div class="container-fluid">
-    <div class="row">
     <?php if($this->session->userdata('UserRole') == 1){ ?>
+    <div class="row stat-cards">
+            <div class="col-md-6 col-xl-3">
+                <article class="stat-cards-item">
+                <div class="w-lg-100">
+                    <div class="m-auto stat-cards-icon primary">
+                        <i data-feather="bar-chart-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="stat-cards-info w-lg-100">
+                    <p class="stat-cards-info__num"><?php echo $today_sales ?></p>
+                    <p class="stat-cards-info__title">Today Pharmacy Bill</p>
+                    <p class="stat-cards-info__progress">
+                    <span class="stat-cards-info__profit success">
+                        <i data-feather="trending-up" aria-hidden="true"></i>4.07%
+                    </span>
+                    Yesterday
+                    </p>
+                </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="stat-cards-item">
+                <div class="w-lg-100">
+                    <div class="m-auto stat-cards-icon warning">
+                        <i data-feather="database" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="stat-cards-info w-lg-100">
+                    <p class="stat-cards-info__num"><?php echo $monthly_sales ?></p>
+                    <p class="stat-cards-info__title">Monthly Pharmacy Bill</p>
+                    <p class="stat-cards-info__progress">
+                    <span class="stat-cards-info__profit success">
+                        <i data-feather="trending-up" aria-hidden="true"></i>0.24%
+                    </span>
+                    Last month
+                    </p>
+                </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="stat-cards-item">
+                <div class="w-lg-100">
+                    <div class="m-auto stat-cards-icon purple">
+                        <i data-feather="archive" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="stat-cards-info w-lg-100">
+                    <p class="stat-cards-info__num"><?php echo $products ?></p>
+                    <p class="stat-cards-info__title">Products</p>
+                    <p class="stat-cards-info__progress">
+                    <span class="stat-cards-info__profit danger">
+                        <i data-feather="trending-down" aria-hidden="true"></i>1.64%
+                    </span>
+                    Last month
+                    </p>
+                </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="stat-cards-item">
+                <div class="w-lg-100">
+                    <div class="m-auto stat-cards-icon success">
+                        <i data-feather="feather" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="stat-cards-info w-lg-100">
+                    <p class="stat-cards-info__num"><?php echo $today_purchase ?></p>
+                    <p class="stat-cards-info__title">Today Purchase</p>
+                    <p class="stat-cards-info__progress">
+                    <span class="stat-cards-info__profit warning">
+                        <i data-feather="trending-up" aria-hidden="true"></i>0.00%
+                    </span>
+                    Yesterday
+                    </p>
+                </div>
+                </article>
+            </div>
+    </div>
+    <div class="row stat-cards my-2">
+            <div class="col-md-6 col-xl-3">
+                <article class="stat-cards-item">
+                <div class="w-lg-100">
+                    <div class="m-auto stat-cards-icon warning">
+                        <i data-feather="layers" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="stat-cards-info w-lg-100">
+                    <p class="stat-cards-info__num"><?php echo $monthly_purchase ?></p>
+                    <p class="stat-cards-info__title">Monthly Purchase</p>
+                    <p class="stat-cards-info__progress">
+                    <span class="stat-cards-info__profit success">
+                        <i data-feather="trending-up" aria-hidden="true"></i>4.07%
+                    </span>
+                    Last month
+                    </p>
+                </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="stat-cards-item">
+                <div class="w-lg-100">
+                    <div class="m-auto stat-cards-icon purple">
+                        <i data-feather="file" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="stat-cards-info w-lg-100">
+                    <p class="stat-cards-info__num"><?php echo $category_count ?></p>
+                    <p class="stat-cards-info__title">Today Doctor Consultancy</p>
+                    <p class="stat-cards-info__progress">
+                    <span class="stat-cards-info__profit success">
+                        <i data-feather="trending-up" aria-hidden="true"></i>0.24%
+                    </span>
+                    Yesterday
+                    </p>
+                </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="stat-cards-item">
+                <div class="w-lg-100">
+                    <div class="m-auto stat-cards-icon success">
+                        <i data-feather="printer" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="stat-cards-info w-lg-100">
+                    <p class="stat-cards-info__num"><?php echo $subcategory_count ?></p>
+                    <p class="stat-cards-info__title">Today Lab Test</p>
+                    <p class="stat-cards-info__progress">
+                    <span class="stat-cards-info__profit danger">
+                        <i data-feather="trending-down" aria-hidden="true"></i>1.64%
+                    </span>
+                    Yesterday
+                    </p>
+                </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <article class="stat-cards-item">
+                <div class="w-lg-100">
+                    <div class="m-auto stat-cards-icon primary">
+                        <i data-feather="command" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="stat-cards-info w-lg-100">
+                    <p class="stat-cards-info__num"><?php echo $downloaded_users; ?></p>
+                    <p class="stat-cards-info__title">Monthly Doctor Consultancy</p>
+                    <p class="stat-cards-info__progress">
+                    <span class="stat-cards-info__profit warning">
+                        <i data-feather="trending-up" aria-hidden="true"></i>0.00%
+                    </span>
+                    Last month
+                    </p>
+                </div>
+                </article>
+            </div>
+    </div>
+<?php } ?>
+    <div class="row d-none">
+        <?php if($this->session->userdata('UserRole') == 1){ ?>
         <div class="col-sm-6 col-xl-3 col-lg-6">
         <div class="card o-hidden">
             <div class="bg-primary b-r-4 card-body">
@@ -72,7 +230,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row d-none">
         <div class="col-sm-6 col-xl-3 col-lg-6">
             <div class="card o-hidden">
                 <div class="bg-info b-r-4 card-body">
