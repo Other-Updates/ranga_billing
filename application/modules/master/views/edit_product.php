@@ -152,7 +152,7 @@
                             <div data-type="image-buttons" class="row justify-content-center mt-2">
                                 <button data-type="add" class="btn btn-outline-t-success" type="button"><span class="fa fa-camera mr-2"></span>Add</button>
                                 <button data-type="btn-modify" type="button" class="btn btn-outline-success m-0" data-toggle="popover" data-placement="right" style="display:none;">
-                                <span class="fa fa-edit fs-5 mr-2"></span>Modify
+                                <span class="fa fa-pencil td-icon mr-2"></span>Modify
                                 </button>
                             </div>
                         </div>

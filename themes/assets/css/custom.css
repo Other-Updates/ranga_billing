@@ -729,3 +729,23 @@ i.fa.fs-5 {
         margin: auto;
     }
 }
+.dataTables_wrapper table.dataTable thead th{
+    background-color: #efefff;
+    color: #434b63;
+}
+table.dataTable.stripe tbody tr.odd, table.dataTable.display tbody tr.odd {
+    background-color: #fff;
+}
+table.dataTable.display tr:nth-child(even)>td{
+    background-color: #f6f8ff;
+}
+.td-icon, i.fa.fa-eye.fs-5 {
+    font-size: 18px;
+    color: #686868;
+}
+.td-icon:hover {
+    color: var(--theme-deafult);
+}
+i.fa.fa-trash.td-icon {
+    margin-left: 10px;
+}

@@ -39,8 +39,8 @@ class Product_price extends MY_Controller {
         $sno = $input_data['start'] + 1;
         // echo "<pre>";print_r($list);exit;
         foreach ($list as $key=>$post) {
-            $delete = '<a href="" data-id="'.$post->iProductPriceListId.'" class="action-icon removeAttr " ><i class="fa fa-remove fs-5"></i></a>';
-            $edit = '<a href="" data-id="'.$post->iProductPriceListId.'" class="action-icon addAttr" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-edit fs-5"></i></a>';
+            $delete = '<a href="" data-id="'.$post->iProductPriceListId.'" class="action-icon removeAttr " ><i class="fa fa-trash td-icon"></i></a>';
+            $edit = '<a href="" data-id="'.$post->iProductPriceListId.'" class="action-icon addAttr" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-pencil td-icon"></i></a>';
             $row = array();
             $row[] = $sno++;
             $row[] = $post->vProductName;   

@@ -125,7 +125,7 @@
                     <td class="rec_remarks<?php echo $val['id'] ?>"><?php echo ($val['remarks']) ? $val['remarks'] : '-'; ?></td>
                     <?php if ($receipt_details[0]['inv_id'] != 'Wings Invoice') { ?>
                         <td class="hide_class text-center">
-                            <button type="button" rec_id ="<?php echo $val['id'] ?>" class="action-btn edit payedit action-icon" data-id="<?php echo $val['id']; ?>" id="edit_model" data-toggle="modal" data-target="#Model" title="" data-original-title="Edit"><span class="fa fa-edit fs-5"></span></button>
+                            <button type="button" rec_id ="<?php echo $val['id'] ?>" class="action-btn edit payedit action-icon" data-id="<?php echo $val['id']; ?>" id="edit_model" data-toggle="modal" data-target="#Model" title="" data-original-title="Edit"><span class="fa fa-pencil td-icon"></span></button>
                             <!-- <button type="button" rec_id ="<?php echo $val['id'] ?>" class="btn btn-primary download action-icon"><span class="fa fa-download"></span></button> -->
                             <button type="button" rec_id ="<?php echo $val['id'] ?>"class="action-btn print6 print action-icon"><span class="icofont icofont-printer"></span></button>
                         </td>

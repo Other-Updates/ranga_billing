@@ -69,10 +69,10 @@
                                                         <td><?php echo ucfirst($list['category']); ?></td>
                                                         <td>
                                                             <a id="<?php echo $list['id']; ?>" href="#" class="action-icon kt_modal_edit_cat" title="Edit">
-                                                            <i class="fa fa-edit fs-5"></i></a>&nbsp;&nbsp;
+                                                            <i class="fa fa-pencil td-icon"></i></a>&nbsp;&nbsp;
                                                             
                                                             <a name="delete" class="action-icon delete_row" delete_id="<?php echo $list['id']; ?>" title="<?php echo $language['delete']; ?>">
-                                                            <i class="fa fa-remove fs-5"></i></a>
+                                                            <i class="fa fa-trash td-icon"></i></a>
                                                         </td>
                                                     </tr>
                                             <?php

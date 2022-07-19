@@ -51,8 +51,8 @@
                                     <td><?php echo $roles['eStatus']; ?></td>
                                     <td>
                                         <a href="<?php echo base_url('master/user_role/user_permission/'.$roles['iUserRoleId']); ?>" class="action-icon fa fa-cog"></a>
-                                        <a href="" data-id= "<?php echo $roles['iUserRoleId'] ?>" class="action-icon addAttr" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-edit fs-5"></i></a>
-                                        <a href="" data-id= "<?php echo $roles['iUserRoleId'] ?>" class="action-icon removeAttr " ><i class="fa fa-remove fs-5"></i></a>
+                                        <a href="" data-id= "<?php echo $roles['iUserRoleId'] ?>" class="action-icon addAttr" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-pencil td-icon"></i></a>
+                                        <a href="" data-id= "<?php echo $roles['iUserRoleId'] ?>" class="action-icon removeAttr " ><i class="fa fa-trash td-icon"></i></a>
                                     </td>
                                 </tr>
                             <?php $sno++;

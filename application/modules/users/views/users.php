@@ -5,19 +5,19 @@
 <section class="ftco-section">
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-md-6 text-center mb-3">
-				<img class="img-fluid for-light" src="<?php echo $theme_path ?>/assets/images/logo/login.png" alt="looginpage">
-			</div>
-		</div>
-		<div class="row justify-content-center">
 			<div class="col-md-12 col-lg-10">
 				<div class="wrap d-md-flex">
-					<div class="text-wrap p-1 text-center d-flex align-items-center">
+					<div class="text-wrap text-center d-flex align-items-center">
 						<div class="w-100">
                             <img src="<?php echo $theme_path ?>/assets/images/login/login.jpg" alt="Ranga Hospital" class="w-100">
 						</div>
 					</div>
 					<div class="login-wrap p-4 p-lg-5 order-md-last">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center mb-3">
+                            <img class="img-fluid for-light" src="<?php echo $theme_path ?>/assets/images/logo/login.png" alt="looginpage">
+                        </div>
+                    </div>
 						<div class="d-flex">
 							<div class="w-100">
 								<h3 class="mb-4">Sign In</h3>

@@ -42,8 +42,8 @@ class Stock_report extends MY_Controller {
         $sno = $input_data['start'] + 1;
         // echo "<pre>";print_r($list);exit;
         foreach ($list as $key=>$post) {
-            $delete = '<a href="" data-id="'.$post->iStockId.'" class="action-icon removeAttr " ><i class="fa fa-remove fs-5"></i></a>';
-            $edit = '<a href="'.base_url('stock/edit_stock/'.$post->iStockId).'" data-id="'.$post->iStockId.'" class="action-icon addAttr"><i class="fa fa-edit fs-5"></i></a>';
+            $delete = '<a href="" data-id="'.$post->iStockId.'" class="action-icon removeAttr " ><i class="fa fa-trash td-icon"></i></a>';
+            $edit = '<a href="'.base_url('stock/edit_stock/'.$post->iStockId).'" data-id="'.$post->iStockId.'" class="action-icon addAttr"><i class="fa fa-pencil td-icon"></i></a>';
             $row = array();
             $row[] = $sno++;
             $row[] = $post->vHeadOfficeName;
@@ -74,8 +74,8 @@ class Stock_report extends MY_Controller {
         $sno = $input_data['start'] + 1;
         // echo "<pre>";print_r($list);exit;
         foreach ($list as $key=>$post) {
-            // $delete = '<a href="" data-id="'.$post->iStockId.'" class="action-icon removeAttr " ><i class="fa fa-remove fs-5"></i></a>';
-            // $edit = '<a href="'.base_url('stock/edit_stock/'.$post->iStockId).'" data-id="'.$post->iStockId.'" class="action-icon addAttr"><i class="fa fa-edit fs-5"></i></a>';
+            // $delete = '<a href="" data-id="'.$post->iStockId.'" class="action-icon removeAttr " ><i class="fa fa-trash td-icon"></i></a>';
+            // $edit = '<a href="'.base_url('stock/edit_stock/'.$post->iStockId).'" data-id="'.$post->iStockId.'" class="action-icon addAttr"><i class="fa fa-pencil td-icon"></i></a>';
             $row = array();
             $row[] = $sno++;
             $row[] = $post->vCategoryName;
