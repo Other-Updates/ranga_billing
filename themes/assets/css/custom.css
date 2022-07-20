@@ -756,8 +756,12 @@ table td.text-center{
   li.profile-nav.onhover-dropdown .menu-container {
     position: relative;
     border-radius: 22px;
-    padding: 0 20px;
+    width: 160px;
 
+  }
+  li.profile-nav.onhover-dropdown .menu-container.open .fa-angle-down{
+    transform: rotate(180deg);
+    transition: all .7s;
   }
   li.profile-nav.onhover-dropdown .menu-container.open > .menu-button {
     color: #000;

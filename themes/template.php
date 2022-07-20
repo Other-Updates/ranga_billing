@@ -112,20 +112,8 @@
               
               <li class="maximize"><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize" class="text-white"></i></a></li>
               <li class="profile-nav onhover-dropdown p-0 me-0">
-              <script>
-                var menuButton = document.querySelector(".menu-button");
-                menuButton.addEventListener("click", function(event) {
-                event.preventDefault();
-                var parent = document.querySelector(".menu-container");
-                if (parent.classList.contains("open")) {
-                    parent.classList.remove("open");
-                } else {
-                    parent.classList.add("open");
-                }
-                });
-              </script>
                 <div class="menu-container">
-                  <button class="menu-button"><img  src="<?php echo $theme_path ?>/assets/images/dashboard/profile.jpg" alt="Profile"><span class="title"><?php echo $user['vName']; ?></span></button>
+                  <button class="menu-button"><img  src="<?php echo $theme_path ?>/assets/images/dashboard/profile.jpg" alt="Profile"><span class="title"><?php echo $user['vName']; ?></span>&nbsp;<i class="fa fa-angle-down"></i></button>
                   
                   <div class="menu-dropdown">
                   
