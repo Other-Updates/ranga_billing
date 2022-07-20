@@ -191,7 +191,7 @@
                         <!-- <li><a class="lan users" href="<?php echo base_url('master/user/salesman') ?>">Users</a></li> -->
                         <li><a class="lan customers" href="<?php echo base_url('master/distributor'); ?>">Customers</a></li>  
                         <li><a class="lan suppliers" href="<?php echo base_url('master/supplier'); ?>">Suppliers</a></li>  
-                        <li><a class="lan Staff" href="#">Staff Name</a></li>  
+                        <li><a class="lan Staff" href="<?php echo base_url('master/staffname'); ?>">Staff Name</a></li>  
                       </ul>
                     </li>
                     <!-- <li class="sidebar-list">
@@ -231,11 +231,10 @@
                     <li class="sidebar-list">
                       <label class="badge badge-success"></label><a class="sidebar-link sidebar-title" href="#"><i class="fa fa-sticky-note icon"></i><span class="lan">Billing</span></a>
                       <ul class="sidebar-submenu order-submenu">
-                      <li><a class="lan sales" href="#">Sales Bill</a></li>
-                      <li><a class="lan pharmacy" href="#">Pharmacy Billing</a></li>
-                      <li><a class="lan consulting" href="#">Consulting Fee</a></li>
-                      <li><a class="lan xray" href="#">XRay Fee</a></li>
-                      <li><a class="lan lab" href="#">Lab Fee</a></li>
+                      <li><a class="lan pharmacy" href="<?php echo base_url('billing/pharmacy_billing') ?>">Pharmacy Billing</a></li>
+                      <li><a class="lan consulting" href="<?php echo base_url('billing/consulting_fee') ?>">Consulting Fee</a></li>
+                      <li><a class="lan xray" href="<?php echo base_url('billing/xray_fee') ?>">XRay Fee</a></li>
+                      <li><a class="lan lab" href="<?php echo base_url('billing/lab_fee') ?>">Lab Fee</a></li>
                       </ul>
                     </li>
                     <!-- <li class="sidebar-list">
