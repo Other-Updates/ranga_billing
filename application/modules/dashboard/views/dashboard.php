@@ -11,7 +11,7 @@
             </div>
             <div class="col-6">
                 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?php echo base_url('master/dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Dashboard</li>
                 <!-- <li class="breadcrumb-item active">Default</li> -->
                 </ol>
@@ -129,7 +129,7 @@
                 </div>
                 <div class="stat-cards-info w-lg-100">
                     <p class="stat-cards-info__num"><?php echo $category_count ?></p>
-                    <p class="stat-cards-info__title">Today Doctor Consultancy</p>
+                    <p class="stat-cards-info__title">Today Consultancy</p>
                     <p class="stat-cards-info__progress">
                     <span class="stat-cards-info__profit success">
                         <i data-feather="trending-up" aria-hidden="true"></i>0.24%
@@ -167,7 +167,7 @@
                 </div>
                 <div class="stat-cards-info w-lg-100">
                     <p class="stat-cards-info__num"><?php echo $downloaded_users; ?></p>
-                    <p class="stat-cards-info__title">Monthly Doctor Consultancy</p>
+                    <p class="stat-cards-info__title">Monthly Consultancy</p>
                     <p class="stat-cards-info__progress">
                     <span class="stat-cards-info__profit warning">
                         <i data-feather="trending-up" aria-hidden="true"></i>0.00%
@@ -358,7 +358,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 xl-50 box-col-12">
+        <div class="col-xl-4 xl-50 box-col-12 d-none">
             <div class="card">
                 <div class="card-header p-3">
                     <h5>Most selling Product</h5>
@@ -456,7 +456,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 xl-50 box-col-12">
+        <div class="col-xl-4 xl-50 box-col-12 d-none">
             <div class="card">
                 <div class="card-header p-3">
                     <h5>App Downloads</h5>                    

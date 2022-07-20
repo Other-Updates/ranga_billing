@@ -113,7 +113,7 @@
                                     <?php
                                     if ($val['payment_status'] == 'Pending') {
                                         ?>
-                                        <a href="<?php if ($this->user_auth->is_action_allowed('sales_receipt', 'sales_receipt', 'edit')): ?><?php echo $this->config->item('base_url') . 'sales_receipt/manage_receipt/' . $val['id'] ?><?php endif ?>"data-toggle="tooltip" class="tooltips btn btn-info btn-xs <?php if (!$this->user_auth->is_action_allowed('sales_receipt', 'sales_receipt', 'edit')): ?>alerts<?php endif ?>" title="" data-original-title="Edit"><span class="fa fa-edit fs-5 "></span></a>
+                                        <a href="<?php if ($this->user_auth->is_action_allowed('sales_receipt', 'sales_receipt', 'edit')): ?><?php echo $this->config->item('base_url') . 'sales_receipt/manage_receipt/' . $val['id'] ?><?php endif ?>"data-toggle="tooltip" class="tooltips btn btn-info btn-xs <?php if (!$this->user_auth->is_action_allowed('sales_receipt', 'sales_receipt', 'edit')): ?>alerts<?php endif ?>" title="" data-original-title="Edit"><span class="fa fa-pencil td-icon "></span></a>
                                         <a href="<?php if ($this->user_auth->is_action_allowed('sales_receipt', 'sales_receipt', 'view')): ?><?php echo $this->config->item('base_url') . 'sales_receipt/view_receipt/' . $val['id'] ?><?php endif ?>" data-toggle="tooltip" class="tooltips btn btn-default btn-xs <?php if (!$this->user_auth->is_action_allowed('sales_receipt', 'sales_receipt', 'view')): ?>alerts<?php endif ?>" title="" data-original-title="View" ><span class="fa fa-eye fs-5"></span></a>
 
                                         <?php

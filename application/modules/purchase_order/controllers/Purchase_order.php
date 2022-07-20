@@ -29,12 +29,12 @@ class Purchase_order extends MY_Controller {
         foreach ($list as $key=>$post) {
             if($user_role_id != 1){
                 $check = 0;
-                $edit = '<a href="#" data-id="'.$post->iPurchaseOrderId.'" data-order-no="'.$post->vPurchaseOrderNo.'" data_url="'.base_url('purchase_order/edit_purchase_order/').$post->iPurchaseOrderId.'" class="action-icon edit_purchase_order_modal fa fa-edit fs-5" ></a>';
+                $edit = '<a href="#" data-id="'.$post->iPurchaseOrderId.'" data-order-no="'.$post->vPurchaseOrderNo.'" data_url="'.base_url('purchase_order/edit_purchase_order/').$post->iPurchaseOrderId.'" class="action-icon edit_purchase_order_modal fa fa-pencil td-icon" ></a>';
             }else{
                 $check = 1;
-                $edit = '<a href="'.base_url('purchase_order/edit_purchase_order/').$post->iPurchaseOrderId.'" data-id="'.$post->iPurchaseOrderId.'" class="action-icon edit_purchase_order" ><i class="fa fa-edit fs-5"></i></a>';
+                $edit = '<a href="'.base_url('purchase_order/edit_purchase_order/').$post->iPurchaseOrderId.'" data-id="'.$post->iPurchaseOrderId.'" class="action-icon edit_purchase_order" ><i class="fa fa-pencil td-icon"></i></a>';
             }
-            $delete = '<a href="" data-id="'.$post->iPurchaseOrderId.'" class="action-icon removeAttr" data-check="'.$check.'"><i class="fa fa-remove fs-5"></i></a>';
+            $delete = '<a href="" data-id="'.$post->iPurchaseOrderId.'" class="action-icon removeAttr" data-check="'.$check.'"><i class="fa fa-trash td-icon"></i></a>';
             $view = '<a href="'.base_url('purchase_order/view_purchase_order/').$post->iPurchaseOrderId.'" data-id="'.$post->iPurchaseOrderId.'" class="action-icon" ><i class="fa fa-eye fs-5"></i></a>';
             $return = '';
             if($post->eDeliveryStatus == "Delivered"){

@@ -11,7 +11,7 @@
             </div>
             <div class="col-6">
                 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?php echo base_url('master/dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Products</li>
                 <li class="breadcrumb-item active">Add Product</li>
                 </ol>
@@ -29,12 +29,12 @@
                         <input class="form-control tamil-lang" id="validationCustom01" type="text" name="product_name_tamil" value="">
                         <div class="valid-feedback">Looks good!</div>
                     </div>               
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom01">Product Name</label>
                         <input class="form-control" id="validationCustom01" type="text" name="product_name" value="" required="">
                         <div class="valid-feedback">Looks good!</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom04">Category</label>
                         <select class="form-select category_id" name="product_category" id="validationCustom04" required="">
                         <option selected="" disabled="" value="">Choose...</option>
@@ -44,7 +44,7 @@
                         </select>
                         <div class="invalid-feedback">Please select a valid state.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom04">Subcategory</label>
                         <select class="form-select subcategory_id" name="subcategory" id="validationCustom04" required="">
                         <option selected="" disabled="" value="">Choose...</option>
@@ -54,7 +54,7 @@
                         </select>
                         <div class="invalid-feedback">Please select a valid state.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom04">Brand</label>
                         <select class="form-select" name="brand_name" id="validationCustom04" required="">
                         <option selected="" disabled="" value="">Choose...</option>
@@ -64,7 +64,7 @@
                         </select>
                         <div class="invalid-feedback">Please select a valid state.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom04">Model</label>
                         <select class="form-select" name="model_name" id="validationCustom04" required="">
                         <option selected="" disabled="" value="">Choose...</option>
@@ -74,27 +74,27 @@
                         </select>
                         <div class="invalid-feedback">Please select a valid state.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">IGST</label>
                         <input class="form-control add_igst" id="validationCustom03" type="text" name="igst" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">CGST</label>
                         <input class="form-control add_cgst" id="validationCustom03" type="text" name="cgst" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">SGST</label>
                         <input class="form-control add_sgst" id="validationCustom03" type="text" name="sgst" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">HSN No</label>
                         <input class="form-control" id="validationCustom03" type="text" name="hsn_no" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">Description</label>
                         <textarea class="form-control" id="validationCustom03" name="description" required=""></textarea>
                         <div class="invalid-feedback">Field is required.</div>
@@ -128,18 +128,18 @@
                     <!-- Model -->
                     <div data-type="image-model" class="col-4 pl-2 pr-2 pt-2" style="max-width:200px; display:none;">
                         <div class="ratio-box text-center" data-type="image-ratio-box">
-                            <img data-type="noimage" class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded" src="<?php echo $theme_path ?>/assets/images/photo-camera-gray.svg" style="cursor:pointer;">
+                            <img data-type="noimage" class="btn btn-light ratio-img img-fluid p-2 image border rounded" src="<?php echo $theme_path ?>/assets/images/photo-camera-gray.svg" style="cursor:pointer;">
                             <div data-type="loading" class="img-loading" style="color:#218838; display:none;">
                             <span class="fa fa-2x fa-spin fa-spinner"></span>
                             </div>
-                            <img data-type="preview" class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded" src="" style="display: none; cursor: default;">
+                            <img data-type="preview" class="btn btn-light ratio-img img-fluid p-2 image border rounded" src="" style="display: none; cursor: default;">
                             <span class="badge badge-pill badge-success p-2 w-50 main-tag" style="display:none;">Main</span>
                         </div>
                         <!-- Buttons -->
                         <div data-type="image-buttons" class="row justify-content-center mt-2">
                             <button data-type="add" class="btn btn-outline-t-success" type="button"><span class="fa fa-camera mr-2"></span>Add</button>
                             <button data-type="btn-modify" type="button" class="btn btn-outline-success m-0" data-toggle="popover" data-placement="right" style="display:none;">
-                            <span class="fa fa-edit fs-5 mr-2"></span>Modify
+                            <span class="fa fa-pencil td-icon mr-2"></span>Modify
                             </button>
                         </div>
                     </div>

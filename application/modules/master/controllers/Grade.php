@@ -34,8 +34,8 @@ class Grade extends MY_Controller {
         $sno = $input_data['start'] + 1;
         // echo "<pre>";print_r($list);exit;
         foreach ($list as $key=>$post) {
-            $delete = '<a href="" data-id="'.$post->iGradeId.'" class="action-icon removeAttr " ><i class="fa fa-remove fs-5"></i></a>';
-            $edit = '<a href="" data-id="'.$post->iGradeId.'" class="action-icon addAttr" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-edit fs-5"></i></a>';
+            $delete = '<a href="" data-id="'.$post->iGradeId.'" class="action-icon removeAttr " ><i class="fa fa-trash td-icon"></i></a>';
+            $edit = '<a href="" data-id="'.$post->iGradeId.'" class="action-icon addAttr" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-pencil td-icon"></i></a>';
             if($post->vGradeName == "A Grade" || $post->vGradeName == "B Grade" || $post->vGradeName == "C Grade" || $post->vGradeName == "D Grade"){
                 $delete = '';
                 $edit = '';

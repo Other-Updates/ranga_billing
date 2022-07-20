@@ -143,9 +143,9 @@ class Product extends MY_Controller {
         // echo "<pre>";print_r($list);exit;
         foreach ($list as $key=>$post) {
             $img = explode(',',$post->vImages);
-            $delete = '<a href="" data-id="'.$post->iProductId.'" class="removeAttr action-icon" ><i class="fa fa-remove fs-5"></i></a>';
-            // $edit = '<a href="" data-id="'.$post->iProductId.'" class="addAttr action-icon" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-edit fs-5"></i></a>';
-            $edit = '<a href="'.base_url().'master/product/edit_product/'.$post->iProductId.'"  class="action-icon"><i class="fa fa-edit fs-5"></i></a>';
+            $delete = '<a href="" data-id="'.$post->iProductId.'" class="removeAttr action-icon" ><i class="fa fa-trash td-icon"></i></a>';
+            // $edit = '<a href="" data-id="'.$post->iProductId.'" class="addAttr action-icon" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-pencil td-icon"></i></a>';
+            $edit = '<a href="'.base_url().'master/product/edit_product/'.$post->iProductId.'"  class="action-icon"><i class="fa fa-pencil td-icon"></i></a>';
             $row = array();
             $row[] = $sno++;   
             // if(!empty($post->image)){

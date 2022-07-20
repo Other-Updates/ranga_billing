@@ -56,7 +56,7 @@
             </div>
             <div class="col-6">
                 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?php echo base_url('master/dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Receipt</li>
                 <li class="breadcrumb-item active">Update Sales Receipt</li>
                 </ol>
@@ -142,7 +142,7 @@
                     <td class="rec_remarks<?php echo $val['id'] ?>"><?php echo ($val['remarks']) ? $val['remarks'] : '-'; ?></td>
                     <?php if ($receipt_details[0]['inv_id'] != 'Wings Invoice') { ?>
                         <td class="hide_class">
-                            <button type="button" rec_id ="<?php echo $val['id'] ?>" class="btn btn-info edit payedit action-icon" data-id="<?php echo $val['id']; ?>" id="edit_model" data-toggle="modal" data-target="#Model" title="" data-original-title="Edit"><span class="fa fa-edit fs-5 "></span></button>
+                            <button type="button" rec_id ="<?php echo $val['id'] ?>" class="btn btn-info edit payedit action-icon" data-id="<?php echo $val['id']; ?>" id="edit_model" data-toggle="modal" data-target="#Model" title="" data-original-title="Edit"><span class="fa fa-pencil td-icon "></span></button>
                             <button type="button" rec_id ="<?php echo $val['id'] ?>" class="btn btn-primary download action-icon"><span class="fa fa-download"></span></button>
                             <button type="button" rec_id ="<?php echo $val['id'] ?>"class="btn btn-danger print action-icon"><span class="fa fa-print"></span></button>
                         </td>

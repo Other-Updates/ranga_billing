@@ -23,7 +23,7 @@
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Master</li>
                 <li class="breadcrumb-item active">Expense Category<li>
                 </ol>
@@ -69,10 +69,10 @@
                                                         <td><?php echo ucfirst($list['category']); ?></td>
                                                         <td>
                                                             <a id="<?php echo $list['id']; ?>" href="#" class="action-icon kt_modal_edit_cat" title="Edit">
-                                                            <i class="fa fa-edit fs-5"></i></a>&nbsp;&nbsp;
+                                                            <i class="fa fa-pencil td-icon"></i></a>&nbsp;&nbsp;
                                                             
                                                             <a name="delete" class="action-icon delete_row" delete_id="<?php echo $list['id']; ?>" title="<?php echo $language['delete']; ?>">
-                                                            <i class="fa fa-remove fs-5"></i></a>
+                                                            <i class="fa fa-trash td-icon"></i></a>
                                                         </td>
                                                     </tr>
                                             <?php
@@ -98,7 +98,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Edit Expense Category</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" name="myform" method="post" action="<?php echo $this->config->item('base_url'); ?>master/manage_category/add/">
             <div class="modal-body scroll-y">
@@ -129,7 +129,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Add Expense Category</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" name="myform" method="post" action="<?php echo $this->config->item('base_url'); ?>master/manage_category/add/">
             <div class="modal-body scroll-y">

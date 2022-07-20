@@ -334,8 +334,8 @@ class Stock extends MY_Controller {
         $sno = $input_data['start'] + 1;
         foreach ($list as $key=>$post) {
             if($this->session->userdata('UserRole') == 1){
-            $delete = '<a href="" data-id="'.$post->iDeliveryOrderId.'" class="action-icon removeAttr " ><i class="fa fa-remove fs-5"></i></a>';
-            $edit = '<a href="'.base_url('stock/edit_stock/'.$post->iDeliveryOrderId).'" data-id="'.$post->iDeliveryOrderId.'" class="action-icon addAttr"><i class="fa fa-edit fs-5"></i></a>';
+            $delete = '<a href="" data-id="'.$post->iDeliveryOrderId.'" class="action-icon removeAttr " ><i class="fa fa-trash td-icon"></i></a>';
+            $edit = '<a href="'.base_url('stock/edit_stock/'.$post->iDeliveryOrderId).'" data-id="'.$post->iDeliveryOrderId.'" class="action-icon addAttr"><i class="fa fa-pencil td-icon"></i></a>';
             }
             $view = "";
             $return = "";

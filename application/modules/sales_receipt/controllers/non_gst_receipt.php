@@ -138,7 +138,7 @@ class Non_gst_receipt extends MX_Controller {
 
             $edit = $this->config->item('base_url') . 'sales_receipt/non_gst_receipt/manage_receipt/' . $val['iSalesOrderId'];
             $view = $this->config->item('base_url') . 'sales_receipt/non_gst_receipt/view_receipt/' . $val['iSalesOrderId'];
-            $edit_url = '<a href="' . $edit . '"data-toggle="tooltip" class="tooltips btn btn-primary btn-xs action-icon" title="" data-original-title="Edit"><span class="fa fa-edit fs-5 "></span></a>';
+            $edit_url = '<a href="' . $edit . '"data-toggle="tooltip" class="tooltips btn btn-primary btn-xs action-icon" title="" data-original-title="Edit"><span class="fa fa-pencil td-icon "></span></a>';
             $views_url = '<a href="' . $view . '" data-toggle="tooltip" class="tooltips btn btn-info btn-xs action-icon" title="" data-original-title="View" ><span class="fa fa-eye fs-5"></span></a>';
 
             $no++;

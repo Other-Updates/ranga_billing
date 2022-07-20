@@ -6,7 +6,7 @@
             </div>
             <div class="col-6">
                 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?php echo base_url('master/dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Master</li>
                 <li class="breadcrumb-item active">User Permissions</li>
                 </ol>
@@ -27,11 +27,11 @@
                                     <tr>
                                     <th>Modules</th>                            
                                     <th>Sections</th>                            
-                                    <th>Enable Menu</th>                 
-                                    <th>View</th>
-                                    <th>Add</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
+                                    <th class="text-center">Enable Menu</th>                 
+                                    <th class="text-center">View</th>
+                                    <th class="text-center">Add</th>
+                                    <th class="text-center">Edit</th>
+                                    <th class="text-center">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -53,30 +53,30 @@
                                                         <tr class="danger">
                                                             <td><strong><?php echo ($k == 1) ? ucfirst($value['vUseModuleName']) : ''; ?></strong></td>
                                                             <td><?php echo ucfirst($section['vUserSectionName']); ?></td>
-                                                            <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccAll]" class="menu_all" value="1" <?php echo $checked_all; ?> /></td>
+                                                            <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccAll]" class="menu_all" value="1" <?php echo $checked_all; ?> /></td>
                                                             <?php if ($section['iAccView'] == 1): ?>
-                                                                <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccView]" class="allow_access" value="1" <?php echo $checked_view; ?> /></td>
+                                                                <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccView]" class="allow_access" value="1" <?php echo $checked_view; ?> /></td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccView'] == 0): ?>
-                                                                <td>NA</td>
+                                                                <td class="text-center">NA</td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccAdd'] == 1): ?>
-                                                                <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccAdd]" class="allow_access" value="1" <?php echo $checked_add; ?> /></td>
+                                                                <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccAdd]" class="allow_access" value="1" <?php echo $checked_add; ?> /></td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccAdd'] == 0): ?>
-                                                                <td>NA</td>
+                                                                <td class="text-center">NA</td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccEdit'] == 1): ?>
-                                                                <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccEdit]" class="allow_access" value="1" <?php echo $checked_edit; ?> /></td>
+                                                                <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccEdit]" class="allow_access" value="1" <?php echo $checked_edit; ?> /></td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccEdit'] == 0): ?>
-                                                                <td>NA</td>
+                                                                <td class="text-center">NA</td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccDelete'] == 1): ?>
-                                                                <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccDelete]" class="allow_access" value="1" <?php echo $checked_delete; ?> /></td>
+                                                                <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccDelete]" class="allow_access" value="1" <?php echo $checked_delete; ?> /></td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccDelete'] == 0): ?>
-                                                                <td>NA</td>
+                                                                <td class="text-center">NA</td>
                                                             <?php endif; ?>
                                                         </tr>
                                                         <?php
