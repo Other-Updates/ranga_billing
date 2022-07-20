@@ -13,7 +13,7 @@ class Lab_fee extends MY_Controller {
 	public function index()
 	{
         $data['title'] = 'pharmacy_bill';
-        $this->template->write_view('content', 'consult_fee', $data);
+        $this->template->write_view('content', 'lab_fees', $data);
         $this->template->render();
 	}
 

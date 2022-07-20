@@ -14,10 +14,10 @@
         <div class="row">
             <div class="col-6">
                 <h3>Staff</h3>
-                <button type="button" class="btn btn-sm btn-primary mnone" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Supplier</button>
+                <button type="button" class="btn btn-sm btn-primary mnone" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Staff</button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-sm btn-primary wnone pull-right" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Supplier</button>
+                <button type="button" class="btn btn-sm btn-primary wnone pull-right" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Staff</button>
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo base_url('master/dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
                 <li class="breadcrumb-item">Master</li>
@@ -56,7 +56,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Add Staff</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" id="supplier_form" novalidate="" method="post" enctype="multipart/form-data" >
                 <input type="hidden" id="unique-branch-err" value="0">
@@ -68,15 +68,15 @@
                         <input class="form-control add_supplier_tamil tamil-lang" id="validationCustom03" type="text" name="supplier_name" placeholder="" >
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
-                        <label class="form-label" for="validationCustom03">Supplier Name</label>
-                        <input class="form-control add_supplier" id="validationCustom03" type="text" name="supplier_name" placeholder="" required="">
+                    <div class="col-md-6 d-none">
+                        <label class="form-label" for="validationCustom03">GSTIN Number</label>
+                        <input class="form-control add_gstno" id="validationCustom03" type="text" name="gst_no" placeholder="">
                         <div class="invalid-feedback">Field is required.</div>
                         <span class="ajax_response_result"></span>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label" for="validationCustom03">GSTIN Number</label>
-                        <input class="form-control add_gstno" id="validationCustom03" type="text" name="gst_no" placeholder="">
+                        <label class="form-label" for="validationCustom03">Staff Name</label>
+                        <input class="form-control add_supplier" id="validationCustom03" type="text" name="supplier_name" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                         <span class="ajax_response_result"></span>
                     </div>
@@ -113,7 +113,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Edit Staff</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" id="supplier_edit_form" novalidate="" method="post" enctype="multipart/form-data" >
                 <input type="hidden" class="supplier_id" name="supplier_id">
@@ -128,11 +128,11 @@
                     </div>
                     <div class="col-md-6">
                         <input type="hidden" class="distributorid" name="distributorid" value="">
-                        <label class="form-label" for="validationCustom03">Supplier Name</label>
+                        <label class="form-label" for="validationCustom03">Staff Name</label>
                         <input class="form-control supplier_name" id="validationCustom03" type="text" name="supplier_name" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 d-none">
                         <label class="form-label" for="validationCustom03">GSTIN Number</label>
                         <input class="form-control edit_gstno" id="validationCustom03" type="text" name="gst_no" placeholder="">
                         <div class="invalid-feedback">Field is required.</div>
@@ -263,7 +263,7 @@
 			},
             "createdRow": function(row, data, dataIndex) {
                 $(row).find('td:eq(0)').attr('data-th', 'S.No');
-                $(row).find('td:eq(1)').attr('data-th', 'Supplier Name');
+                $(row).find('td:eq(1)').attr('data-th', 'Staff Name');
                 $(row).find('td:eq(2)').attr('data-th', 'Status');
                 $(row).find('td:eq(3)').attr('data-th', 'Action');
             },

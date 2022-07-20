@@ -120,7 +120,7 @@
                     
                     <div class="content">
                       <ul>
-                        <li><a href=""><i class="fa fa-cog"></i>&nbsp;&nbsp;&nbsp;Settings</a></li>
+                        <li class="d-none"><a href=""><i class="fa fa-cog"></i>&nbsp;&nbsp;&nbsp;Settings</a></li>
                         <li><a href="<?php echo base_url('master/user/edit_profile') ?>"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Profile</a></li>
                         <li><a href="<?php echo base_url('users/logout'); ?>"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;&nbsp;Logout</a></li>
                       </ul>

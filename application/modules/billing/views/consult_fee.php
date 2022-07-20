@@ -13,15 +13,15 @@
     <div class="page-title">
         <div class="row">
             <div class="col-6">
-                <h3>Pharmacy Bill</h3>
-                <button type="button" class="btn btn-sm btn-primary mnone" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Supplier</button>
+                <h3>Consultancy Fee</h3>
+                <button type="button" class="btn btn-sm btn-primary mnone" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Fee</button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-sm btn-primary wnone pull-right" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Supplier</button>
+                <button type="button" class="btn btn-sm btn-primary wnone pull-right" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Fee</button>
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo base_url('master/dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
                 <li class="breadcrumb-item">Master</li>
-                <li class="breadcrumb-item active">Pharmacy Bill</li>
+                <li class="breadcrumb-item active">Consultancy Fee</li>
                 </ol>
             </div>
         </div>
@@ -33,13 +33,20 @@
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="list-table display basictable" id="basic">
+                    <table class="list-table display table basictable" id="basic">
                         <thead>
                             <tr>
-                            <th>S.No</th>
-                            <th>Staff Name</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                                <th width="5%" data-th="Sno">S.No</th>
+                                <!-- <th>Product</th>
+                                <th>Salesman</th> -->
+                                <th width="20%">DF Number</th>
+                                <th width="25%">Patient</th> 
+                                <th width="15%" class="d-none">Quantity</th>
+                                <th width="15%" class="p-r-30">Bill Amount</th>
+                                <th width="10%" class="d-none">Delivery Date</th>
+                                <th width="10%" class="d-none">Delivery Status</th>
+                                <th width="15%">Created Date</th>
+                                <th width="20%">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -177,141 +184,52 @@
 </div> 
 <script>
     $(document).ready(function(){
-        $('#butsave').on('click', function() {
-            var supplier_name = $('.add_supplier').val();
-            var supplier_name_tamil = $('.add_supplier_tamil').val();
-            var phone = $('.add_phone').val();
-            var address = $('.add_address').val();
-            var email = $('.add_mail').val();
-            var gstno = $('.add_gstno').val();
-            // var status = $('.radio:checked').val();
-            if(supplier_name!="" && supplier_name_tamil!="" && supplier_name!=null && supplier_name_tamil!=null && phone!="" && phone!=null && address!=""){
-                $("#butsave").attr("disabled", "disabled");
-                $.ajax({
-                    url: "<?php echo base_url('master/supplier/add_supplier'); ?>",
-                    type: "POST",
-                    data: {
-                        supplier_name: supplier_name,
-                        supplier_name_tamil: supplier_name_tamil,
-                        phone:phone,
-                        email:email,
-                        address:address,
-                        gstno:gstno
-                    },
-                    cache: false,
-                    success: function(dataResult){
-                        // alert(dataResult);
-                        var dataResult = JSON.parse(dataResult);
-                        if(dataResult.statusCode==200){
-                            $("#butsave").removeAttr("disabled");
-                            $('#supplier_form').find('input:text').val('');
-
-                            $('#kt_modal_add_user').modal('hide');
-                            $('#basic').DataTable().ajax.reload();					
-                        }
-                    }
-                });
-            }
-        });
-
-        $('#btn_update').on('click', function() {
-            var supplier_name = $('.supplier_name').val();
-            var supplier_name_tamil = $('.supplier_name_tamil').val();
-            var phone = $('.edit_phone').val();
-            var email = $('.edit_mail').val();
-            var address = $('.edit_address').val();
-            var status = $('.radio:checked').val();
-            var supplier_id = $('.supplier_id').val();
-            var gstno = $('.edit_gstno').val();
-            if(supplier_name!="" && supplier_name_tamil!="" && status!="" && supplier_id!="" && phone!="" && phone!=null && address!=""){
-                $("#btn_update").attr("disabled", "disabled");
-                $.ajax({
-                    url: "<?php echo base_url('master/supplier/update_supplier'); ?>",
-                    type: "POST",
-                    data: {
-                        supplier_name: supplier_name,
-                        supplier_name_tamil: supplier_name_tamil,
-                        status:status,
-                        supplier_id: supplier_id,
-                        phone:phone,
-                        email:email,
-                        address:address,
-                        gstno:gstno
-                    },
-                    cache: false,
-                    success: function(dataResult){
-                        var dataResult = JSON.parse(dataResult);
-                        if(dataResult.statusCode==200){
-                            $('#btn_update').removeAttr('disabled');
-
-                            $('#supplier_edit_form').find('input:text').val('');
-                            $('#kt_modal_edit_user').modal('hide');
-                            $('#basic').DataTable().ajax.reload();					
-                        }
-                    }
-                });
-            }
-        });
-
         var table = $('#basic').DataTable({
 			"processing":true,
 			"serverSide":true,
+            "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50, 100, 'All'] ],
 			"order":[], 
 			"ajax": {
-				url : "<?php echo base_url('master/supplier/get_suppliers'); ?>",
+				url : "<?php echo base_url('order/get_sales_order'); ?>",
 				type: "POST"  
 			},
             "createdRow": function(row, data, dataIndex) {
                 $(row).find('td:eq(0)').attr('data-th', 'S.No');
-                $(row).find('td:eq(1)').attr('data-th', 'Supplier Name');
-                $(row).find('td:eq(2)').attr('data-th', 'Status');
-                $(row).find('td:eq(3)').attr('data-th', 'Action');
+                $(row).find('td:eq(1)').attr('data-th', 'SO Number');
+                $(row).find('td:eq(2)').attr('data-th', 'Customer');
+                $(row).find('td:eq(3)').attr('data-th', 'Quantity');
+                $(row).find('td:eq(3)').attr('class', 'd-none');
+                $(row).find('td:eq(4)').attr('data-th', 'Sales Amount');
+                $(row).find('td:eq(5)').attr('data-th', 'Delivery Date');
+                $(row).find('td:eq(6)').attr('data-th', 'Delivery Status');
+                $(row).find('td:eq(5)').attr('class', 'd-none');
+                $(row).find('td:eq(6)').attr('class', 'd-none');
+                $(row).find('td:eq(7)').attr('data-th', 'Created Date');
+                $(row).find('td:eq(8)').attr('data-th', 'Action');
             },
-			"columnDefs":[  
+			 "columnDefs":[  
 				{  
-					"targets":[0,3],  
+					"targets":[0,8],  
 					"orderable":false,
-				},
+				}, 
                 {  
-					"targets":[0,2,3],  
+					"targets":[0,3,5,6,7,8],  
 					"className":"text-center"
-				},  
-			], 
+				},
+                 {  
+			 		"targets":[4],  
+			 		"className":"text-right"
+			 	}, 
+                 {  
+			 		"targets":[2],  
+			 		"className":"text-left"
+			 	}, 
+			 ], 
+            "dom": 'lBfrtip',
+                "buttons": [
+                    'excel', 'csv', 'pdf', 'copy',
+                ],
 		});
-
-        $("#close_modal").on('click',function () {
-            $('#kt_modal_add_user').modal('hide');
-        });
-        $("#close_edit_modal").on('click',function () {
-            $('#kt_modal_edit_user').modal('hide');
-        });
-        $(document)	.on('click','.addAttr',function(){
-            var id = $(this).attr('data-id');
-            var baseurl = "<?php echo base_url(); ?>";
-            $.ajax({
-                type : "POST",
-                url  : "<?php echo base_url('master/supplier/edit_supplier');?>",
-                dataType : "JSON",
-                data : {id:id},
-                success: function(data){
-                    console.log(data);
-                    $('.supplier_name').val(data.vSupplierName);
-                    $('.supplier_name_tamil').val(data.vSupplierName_Tamil);
-                    $('.edit_phone').val(data.vPhoneNumber);
-                    $('.edit_mail').val(data.vEmail);
-                    $('.supplier_id').val(data.iSupplierId);
-                    $('.edit_address').val(data.vAddress);
-                    $('.edit_gstno').val(data.vGSTINNo);
-                    if(data.eStatus == "Active"){
-                        $(".radio_active").prop("checked", true);
-                    }
-                    if(data.eStatus == "Inactive"){
-                        $(".radio_inactive").prop("checked", true);
-                    }
-                }
-            });
-            return false;
-        });
     });
     $(document).on('click','.removeAttr',function(event){
       event.preventDefault();
@@ -327,10 +245,11 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 $.ajax({
-                    url: "<?php echo base_url() . 'master/supplier/delete_supplier';?>",
+                    url: "<?php echo base_url() . 'order/delete_sale_order';?>",
                     type: 'POST',
                     data:{id:id},
                     success: function(data) {
+                        console.log(id);
                             Swal.fire(
                         'Deleted!',
                         'Your file has been deleted.',

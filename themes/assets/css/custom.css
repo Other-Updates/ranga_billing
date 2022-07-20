@@ -756,7 +756,7 @@ table td.text-center{
   li.profile-nav.onhover-dropdown .menu-container {
     position: relative;
     border-radius: 22px;
-    width: 160px;
+    min-width: 160px;
 
   }
   li.profile-nav.onhover-dropdown .menu-container.open .fa-angle-down{
@@ -829,8 +829,7 @@ table td.text-center{
   li.profile-nav.onhover-dropdown .menu-dropdown .content > ul > li {
     list-style: none;
     font-size: 16px;
-    margin: 0 0 15px;
-    padding: 0;
+    padding: 6px 0;
     cursor: pointer;
   }
   li.profile-nav.onhover-dropdown .menu-dropdown > .menu-button {
@@ -843,9 +842,12 @@ table td.text-center{
   li.profile-nav.onhover-dropdown .menu-container.open .content{
     color: #000;
     display: block;
+    padding: 5px 17px 0px;
+    border-top: 1px solid #f7f7f7;
   }
   li.profile-nav.onhover-dropdown .menu-container .content .fa{
     font-size: 17px;    
+    margin-right: 5px;
   }
   li.profile-nav.onhover-dropdown .menu-container a {
     color: #434343;

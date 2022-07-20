@@ -34,7 +34,7 @@ class Order extends MY_Controller {
             // $created_date_timestamp = strtotime($post->salecreateddate);
             // $converted_created_date = date('d-m-Y ', $order_date_timestamp);   
             $delete = '<a href="" data-id="'.$post->iSalesOrderId.'" class="action-icon removeAttr " ><i class="fa fa-trash td-icon"></i></a>';
-            $edit = '<a href="'.base_url('order/edit_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-pencil td-icon"></i></a>';
+            $edit = '<a href="'.base_url('order/edit_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-pencil td-icon tm2"></i></a>';
             $view = '<a href="'.base_url('order/view_sales_order/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-eye fs-5"></i></a>';
             $return = "";
             if($post->eDeliveryStatus == "Delivered"){
