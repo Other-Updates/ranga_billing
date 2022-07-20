@@ -129,7 +129,7 @@
                 </div>
                 <div class="stat-cards-info w-lg-100">
                     <p class="stat-cards-info__num"><?php echo $category_count ?></p>
-                    <p class="stat-cards-info__title">Today Doctor Consultancy</p>
+                    <p class="stat-cards-info__title">Today Consultancy</p>
                     <p class="stat-cards-info__progress">
                     <span class="stat-cards-info__profit success">
                         <i data-feather="trending-up" aria-hidden="true"></i>0.24%
@@ -167,7 +167,7 @@
                 </div>
                 <div class="stat-cards-info w-lg-100">
                     <p class="stat-cards-info__num"><?php echo $downloaded_users; ?></p>
-                    <p class="stat-cards-info__title">Monthly Doctor Consultancy</p>
+                    <p class="stat-cards-info__title">Monthly Consultancy</p>
                     <p class="stat-cards-info__progress">
                     <span class="stat-cards-info__profit warning">
                         <i data-feather="trending-up" aria-hidden="true"></i>0.00%
@@ -358,7 +358,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 xl-50 box-col-12">
+        <div class="col-xl-4 xl-50 box-col-12 d-none">
             <div class="card">
                 <div class="card-header p-3">
                     <h5>Most selling Product</h5>
@@ -456,7 +456,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-4 xl-50 box-col-12">
+        <div class="col-xl-4 xl-50 box-col-12 d-none">
             <div class="card">
                 <div class="card-header p-3">
                     <h5>App Downloads</h5>                    

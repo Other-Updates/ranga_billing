@@ -27,11 +27,11 @@
                                     <tr>
                                     <th>Modules</th>                            
                                     <th>Sections</th>                            
-                                    <th>Enable Menu</th>                 
-                                    <th>View</th>
-                                    <th>Add</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
+                                    <th class="text-center">Enable Menu</th>                 
+                                    <th class="text-center">View</th>
+                                    <th class="text-center">Add</th>
+                                    <th class="text-center">Edit</th>
+                                    <th class="text-center">Delete</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -53,30 +53,30 @@
                                                         <tr class="danger">
                                                             <td><strong><?php echo ($k == 1) ? ucfirst($value['vUseModuleName']) : ''; ?></strong></td>
                                                             <td><?php echo ucfirst($section['vUserSectionName']); ?></td>
-                                                            <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccAll]" class="menu_all" value="1" <?php echo $checked_all; ?> /></td>
+                                                            <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccAll]" class="menu_all" value="1" <?php echo $checked_all; ?> /></td>
                                                             <?php if ($section['iAccView'] == 1): ?>
-                                                                <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccView]" class="allow_access" value="1" <?php echo $checked_view; ?> /></td>
+                                                                <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccView]" class="allow_access" value="1" <?php echo $checked_view; ?> /></td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccView'] == 0): ?>
-                                                                <td>NA</td>
+                                                                <td class="text-center">NA</td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccAdd'] == 1): ?>
-                                                                <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccAdd]" class="allow_access" value="1" <?php echo $checked_add; ?> /></td>
+                                                                <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccAdd]" class="allow_access" value="1" <?php echo $checked_add; ?> /></td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccAdd'] == 0): ?>
-                                                                <td>NA</td>
+                                                                <td class="text-center">NA</td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccEdit'] == 1): ?>
-                                                                <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccEdit]" class="allow_access" value="1" <?php echo $checked_edit; ?> /></td>
+                                                                <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccEdit]" class="allow_access" value="1" <?php echo $checked_edit; ?> /></td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccEdit'] == 0): ?>
-                                                                <td>NA</td>
+                                                                <td class="text-center">NA</td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccDelete'] == 1): ?>
-                                                                <td><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccDelete]" class="allow_access" value="1" <?php echo $checked_delete; ?> /></td>
+                                                                <td class="text-center"><input type="checkbox" name="permissions[<?php echo $key; ?>][<?php echo $section['iUserSectionsId']; ?>][iAccDelete]" class="allow_access" value="1" <?php echo $checked_delete; ?> /></td>
                                                             <?php endif; ?>
                                                             <?php if ($section['iAccDelete'] == 0): ?>
-                                                                <td>NA</td>
+                                                                <td class="text-center">NA</td>
                                                             <?php endif; ?>
                                                         </tr>
                                                         <?php

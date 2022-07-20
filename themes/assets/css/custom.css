@@ -721,14 +721,6 @@ table.dataTable.table thead th.sorting:after, table.dataTable.table thead th.sor
 i.fa.fs-5 {
     font-size: 15px !important;
 }
-@media (min-width: 768px) {
-    .w-lg-100{
-        width: 100%;
-    }
-    .stat-cards-info__progress{
-        margin: auto;
-    }
-}
 .dataTables_wrapper table.dataTable thead th{
     background-color: #efefff;
     color: #434b63;
@@ -746,9 +738,12 @@ table.dataTable.display tr:nth-child(even)>td{
 .td-icon:hover {
     color: var(--theme-deafult);
 }
-i.fa.fa-trash.td-icon {
+i.fa.fa-trash.td-icon, i.fa.fa-pencil.td-icon.tm2 {
     margin-left: 5px;
 }
 table td.text-center{
     white-space: nowrap;
+}
+.stat-cards-info{
+    margin-left: 5px;
 }
