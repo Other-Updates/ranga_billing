@@ -32,12 +32,12 @@
                             <input class="form-control tamil-lang" id="validationCustom01" type="text" name="product_name_tamil" value="<?php echo $product['vProductName_Tamil'] ?>">
                             <div class="valid-feedback">Looks good!</div>
                         </div>         
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom01">Product Name</label>
                             <input class="form-control" id="validationCustom01" type="text" name="product_name" value="<?php echo $product['vProductName'] ?>" required="">
                             <div class="valid-feedback">Looks good!</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom04">Category</label>
                             <select class="form-select category_id" name="product_category" id="validationCustom04" required="">
                             <option selected="" disabled="" value="">Choose...</option>
@@ -47,7 +47,7 @@
                             </select>
                             <div class="invalid-feedback">Please select a valid state.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom04">Subcategory</label>
                             <select class="form-select subcategory_id" name="subcategory" id="validationCustom04" required="">
                             <option selected="" disabled="" value="">Choose...</option>
@@ -57,7 +57,7 @@
                             </select>
                             <div class="invalid-feedback">Please select a valid state.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom04">Brand</label>
                             <select class="form-select" name="brand_name" id="validationCustom04" required="">
                             <option selected="" disabled="" value="">Choose...</option>
@@ -67,7 +67,7 @@
                             </select>
                             <div class="invalid-feedback">Please select a valid state.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom04">Model</label>
                             <select class="form-select" name="model_name" id="validationCustom04" required="">
                             <option selected="" disabled="" value="">Choose...</option>
@@ -77,38 +77,47 @@
                             </select>
                             <div class="invalid-feedback">Please select a valid state.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom03">IGST</label>
                             <input class="form-control add_igst" id="validationCustom03" type="text" name="igst" value="<?php echo $product['IGST'] ?>" placeholder="" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom03">CGST</label>
                             <input class="form-control add_cgst" id="validationCustom03" type="text" name="cgst" placeholder="" value="<?php echo $product['CGST'] ?>" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom03">SGST</label>
                             <input class="form-control add_sgst" id="validationCustom03" type="text" name="sgst" placeholder="" value="<?php echo $product['SGST'] ?>" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom03">HSN No</label>
                             <input class="form-control" id="validationCustom03" type="text" value="<?php echo $product['vHSNNO']; ?>" name="hsn_no" placeholder="" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-4">
                             <label class="form-label" for="validationCustom03">Description</label>
                             <textarea class="form-control" id="validationCustom03" type="text" name="description" placeholder="" required=""><?php echo $product['vDescription'] ?></textarea>
                             <div class="invalid-feedback">Field is required.</div>
                         </div>  
+                        <div class="col-md-4">
+                            <label class="form-label mb-2" for="validationCustom03">Status</label>
+                            <label class="d-block" for="edo-ani">
+                            <input class="radio_animated radio_active" id="edo-ani" type="radio" data-value=<?php echo $product['status']; ?> value="Active" <?php if($product['eStatus'] == 'Active'){ echo "checked"; } ?> name="status" data-original-title="" title="">Active
+                            </label>
+                            <label class="d-block" for="edo-ani1">
+                            <input class="radio_animated radio_inactive" id="edo-ani1" type="radio" value="Inactive" <?php if($product['status'] == 'Inactive'){ echo "checked"; } ?> name="status" data-original-title="" title="">Inactive
+                            </label>
+                        </div>
                         <div class="col-md-12">
                             <label class="form-label tamil-lang" for="validationCustom03">விளக்கம்</label>
                             <textarea class="form-control tamil-lang" id="validationCustom03" type="text" name="description_tamil" placeholder=""><?php echo $product['vDescription_Tamil'] ?></textarea>
                             <div class="invalid-feedback">Field is required.</div>
                         </div>                     
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                             <label class="form-label" for="validationCustom03">Status</label>
                             <label class="d-block" for="edo-ani">
                             <input class="radio_animated radio_active" id="edo-ani" type="radio" data-value=<?php echo $product['status']; ?> value="Active" <?php if($product['eStatus'] == 'Active'){ echo "checked"; } ?> name="status" data-original-title="" title="">Active
@@ -217,7 +226,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card d-none">
                 <div class="card-body animate-chk">
                     <div class="branch-box">
                         <div class="section-title">Branch</div>
@@ -350,10 +359,10 @@
                                 <table class="table delivery-order table_minqty" id="table_minqty">
                                     <thead>
                                         <tr>
-                                            <th width="20%" scope="col">Branch</th>
-                                            <th width="13%" scope="col">Unit</th>
-                                            <th width="8%" class="text-right" scope="col">Minimum Quantity</th>
-                                            <th width="4%" scope="col"><button type="button" class="btn btn-t-success btn-sm" id="add_min_qty"><i class="icofont icofont-plus"></i></button></th>
+                                            <th width="20%" scope="col" class="d-none">Branch</th>
+                                            <th width="45%" scope="col">Unit</th>
+                                            <th width="45%" class="text-right" scope="col">Minimum Quantity</th>
+                                            <th width="10%" scope="col"><button type="button" class="btn btn-t-success btn-sm" id="add_min_qty"><i class="icofont icofont-plus"></i></button></th>
                                         </tr>
                                     </thead>
                                     <tbody class="table_minqty_details">
@@ -421,7 +430,7 @@
         $('#add').click(function(e){  
         //     e.preventDefault();
         //    i++;  
-           $('#table').find('.price_details').append('<tr id="row" class="dynamic-added"><td scope="col"><div class="product_unit"><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class=""><input class="form-control price price_0" id="validationCustomUsername" name="price[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class=""><input class="form-control pack" id="validationCustomUsername" name="pack[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class="clone_grade"><div class="invalid-feedback">Field is required.</div></div></td><td><button type="button" name="remove" id="" class="btn btn-danger btn_remove btn-sm"><i class="icofont icofont-minus"></i></button></td></tr>');
+           $('#table').find('.price_details').append('<tr id="row" class="dynamic-added"><td scope="col"><div class="product_unit"><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class=""><input class="form-control price price_0" id="validationCustomUsername" name="price[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class=""><input class="form-control pack" id="validationCustomUsername" name="pack[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ><div class="invalid-feedback">Field is required.</div></div></td><td scope="col" class="d-none"><div class="clone_grade"><div class="invalid-feedback">Field is required.</div></div></td><td><button type="button" name="remove" id="" class="btn btn-danger btn_remove btn-sm"><i class="icofont icofont-minus"></i></button></td></tr>');
                 var unit_td = $(this).closest('table').find("tbody tr:last .product_unit");
                 var grade_td = $(this).closest('table').find("tbody tr:last .clone_grade");
         
@@ -435,7 +444,7 @@
 
         var count_minqty = $('.count_minqty').val();
         $(document).on("click","#add_min_qty",function() {
-            $('.table_minqty').find('.table_minqty_details').append('<tr id="row" class="dynamic-added"><td scope="col"><div class="clone_branch"><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class="clone_unit_minqty"><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class=""><input class="form-control minimum_quantity" id="validationCustomUsername" name="minimum_quantity[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ><div class="invalid-feedback">Field is required.</div></div></td><td><button type="button" name="remove" id="" class="btn btn-danger btn_remove_min_qty btn-sm"><i class="icofont icofont-minus"></i></button></td></tr>');
+            $('.table_minqty').find('.table_minqty_details').append('<tr id="row" class="dynamic-added"><td scope="col" class="d-none"><div class="clone_branch"><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class="clone_unit_minqty"><div class="invalid-feedback">Field is required.</div></div></td><td scope="col"><div class=""><input class="form-control minimum_quantity" id="validationCustomUsername" name="minimum_quantity[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ><div class="invalid-feedback">Field is required.</div></div></td><td><button type="button" name="remove" id="" class="btn btn-danger btn_remove_min_qty btn-sm"><i class="icofont icofont-minus"></i></button></td></tr>');
             var branch_td_first = $(this).closest('table').find("tbody tr:last .clone_branch");
             var unit_td_minqty_first = $(this).closest('table').find("tbody tr:last .clone_unit_minqty");
             $(".branch_clone:first").clone().appendTo(branch_td_first);

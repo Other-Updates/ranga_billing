@@ -833,8 +833,12 @@ table td.text-center{
     border: none;
     color: #000;
   }
+  li.profile-nav.onhover-dropdown .menu-container .content{
+    display: none;
+  }
   li.profile-nav.onhover-dropdown .menu-container.open .content{
     color: #000;
+    display: block;
   }
   li.profile-nav.onhover-dropdown .menu-container .content .fa{
     font-size: 17px;    
@@ -846,4 +850,11 @@ table td.text-center{
 .modal-header{
     background: var(--theme-deafult);
     color: #fff;
+}
+.modal-footer{
+    display: block;
+    border-color: #f1f1f3;
+}
+.modal-footer button:nth-child(2) {
+    float: right;
 }

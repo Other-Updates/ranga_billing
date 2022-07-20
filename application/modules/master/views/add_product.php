@@ -29,12 +29,12 @@
                         <input class="form-control tamil-lang" id="validationCustom01" type="text" name="product_name_tamil" value="">
                         <div class="valid-feedback">Looks good!</div>
                     </div>               
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom01">Product Name</label>
                         <input class="form-control" id="validationCustom01" type="text" name="product_name" value="" required="">
                         <div class="valid-feedback">Looks good!</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom04">Category</label>
                         <select class="form-select category_id" name="product_category" id="validationCustom04" required="">
                         <option selected="" disabled="" value="">Choose...</option>
@@ -44,7 +44,7 @@
                         </select>
                         <div class="invalid-feedback">Please select a valid state.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom04">Subcategory</label>
                         <select class="form-select subcategory_id" name="subcategory" id="validationCustom04" required="">
                         <option selected="" disabled="" value="">Choose...</option>
@@ -54,7 +54,7 @@
                         </select>
                         <div class="invalid-feedback">Please select a valid state.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom04">Brand</label>
                         <select class="form-select" name="brand_name" id="validationCustom04" required="">
                         <option selected="" disabled="" value="">Choose...</option>
@@ -64,7 +64,7 @@
                         </select>
                         <div class="invalid-feedback">Please select a valid state.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom04">Model</label>
                         <select class="form-select" name="model_name" id="validationCustom04" required="">
                         <option selected="" disabled="" value="">Choose...</option>
@@ -74,27 +74,27 @@
                         </select>
                         <div class="invalid-feedback">Please select a valid state.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">IGST</label>
                         <input class="form-control add_igst" id="validationCustom03" type="text" name="igst" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">CGST</label>
                         <input class="form-control add_cgst" id="validationCustom03" type="text" name="cgst" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">SGST</label>
                         <input class="form-control add_sgst" id="validationCustom03" type="text" name="sgst" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">HSN No</label>
                         <input class="form-control" id="validationCustom03" type="text" name="hsn_no" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <label class="form-label" for="validationCustom03">Description</label>
                         <textarea class="form-control" id="validationCustom03" name="description" required=""></textarea>
                         <div class="invalid-feedback">Field is required.</div>
