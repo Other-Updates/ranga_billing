@@ -41,6 +41,13 @@
     <script src="<?php echo $theme_path ?>/assets/js/jquery-3.5.1.min.js"></script>
     <script src="<?php echo $theme_path ?>/assets/js/datatable/datatables/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="/assets/font-awesome.min.css">
+    <script>
+      $(document).ready(function(){
+        $(".menu-button").click(function () {
+          $(".menu-container").toggleClass("open");
+        });
+      });
+  </script>
   </head>
   <body>
     <div class="loader-wrapper">
@@ -105,15 +112,33 @@
               
               <li class="maximize"><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize" class="text-white"></i></a></li>
               <li class="profile-nav onhover-dropdown p-0 me-0">
-                <div class="media profile-media"><img class="b-r-50" src="<?php echo $theme_path ?>/assets/images/dashboard/profile.jpg" alt="">
-                  <div class="media-body"><span><?php echo $user['vName']; ?></span>
-                    <p class="mb-0 font-roboto"><?php echo $user['vUserRole']; ?><i class="middle fa fa-angle-down"></i></p>
+              <script>
+                var menuButton = document.querySelector(".menu-button");
+                menuButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                var parent = document.querySelector(".menu-container");
+                if (parent.classList.contains("open")) {
+                    parent.classList.remove("open");
+                } else {
+                    parent.classList.add("open");
+                }
+                });
+              </script>
+                <div class="menu-container">
+                  <button class="menu-button"><img  src="<?php echo $theme_path ?>/assets/images/dashboard/profile.jpg" alt="Profile"><span class="title"><?php echo $user['vName']; ?></span></button>
+                  
+                  <div class="menu-dropdown">
+                  
+                    
+                    <div class="content">
+                      <ul>
+                        <li><a href=""><i class="fa fa-cog"></i>&nbsp;&nbsp;&nbsp;Settings</a></li>
+                        <li><a href="<?php echo base_url('master/user/edit_profile') ?>"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Profile</a></li>
+                        <li><a href="<?php echo base_url('users/logout'); ?>"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;&nbsp;Logout</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-                <ul class="profile-dropdown onhover-show-div">
-                  <li><a href="<?php echo base_url('master/user/edit_profile') ?>"><i data-feather="user"></i><span>Profile </span></a></li>
-                  <li><a href="<?php echo base_url('users/logout'); ?>"><i data-feather="log-in"> </i><span>Log out</span></a></li>
-                </ul>
               </li>
             </ul>
           </div>

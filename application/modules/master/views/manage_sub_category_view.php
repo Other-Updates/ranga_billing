@@ -22,7 +22,7 @@
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Master</li>
                 <li class="breadcrumb-item active">Expense Subcategory<li>
                 </ol>
@@ -94,7 +94,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Edit Expense Subcategory</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" name="myform" method="post" action="">
             <div class="modal-body scroll-y">
@@ -147,7 +147,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Add Expense Subcategory</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" name="myform" method="post" action="<?php echo $this->config->item('base_url'); ?>master/manage_sub_category/insert_sub_category/">
             <div class="modal-body scroll-y">

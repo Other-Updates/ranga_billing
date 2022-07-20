@@ -19,7 +19,7 @@
             <div class="col-6">
             <button type="button" class="btn btn-sm btn-primary pull-right wnone pull-right" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add User</button>
                 <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?php echo base_url('master/dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
+                <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Master</li>
                 <li class="breadcrumb-item active">Users</li>
                 </ol>
@@ -62,7 +62,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Add User</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" id="add_user" novalidate="" method="post" enctype="multipart/form-data" >
             <div class="modal-body">
@@ -167,7 +167,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Edit User</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" novalidate="" method="post" enctype="multipart/form-data" >
             <input type="hidden" name="user_id" class="user_id">
