@@ -56,7 +56,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Add Supllier</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" id="supplier_form" novalidate="" method="post" enctype="multipart/form-data" >
                 <input type="hidden" id="unique-branch-err" value="0">
@@ -112,8 +112,8 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Edit Branch</h5>
-                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
+                <h5 class="modal-title">Edit Supplier</h5>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" id="supplier_edit_form" novalidate="" method="post" enctype="multipart/form-data" >
                 <input type="hidden" class="supplier_id" name="supplier_id">

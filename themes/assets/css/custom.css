@@ -854,7 +854,8 @@ table td.text-center{
 .modal-footer{
     display: block;
     border-color: #f1f1f3;
+    background-color: #85b2e020;
 }
-.modal-footer button:nth-child(2) {
+.modal-footer .btn-primary {
     float: right;
 }

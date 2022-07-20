@@ -243,6 +243,7 @@
                     <li class="sidebar-list">
                       <label class="badge badge-success"></label><a class="sidebar-link sidebar-title" href="#"><i class="fa fa-sticky-note icon"></i><span class="lan">Billing</span></a>
                       <ul class="sidebar-submenu order-submenu">
+                      <li><a class="lan sales" href="#">Sales Bill</a></li>
                       <li><a class="lan pharmacy" href="#">Pharmacy Billing</a></li>
                       <li><a class="lan consulting" href="#">Consulting Fee</a></li>
                       <li><a class="lan xray" href="#">XRay Fee</a></li>
