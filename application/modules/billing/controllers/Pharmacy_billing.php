@@ -7,7 +7,8 @@ class Pharmacy_billing extends MY_Controller {
         redirect(base_url('users'));
     }
 	    parent::__construct();
-        $this->load->model('pharmacy_billing_model'); 
+        $this->load->model('pharmacy_billing_model');
+        $this->load->model('order/order_model');  
     }
 
 	public function index()
@@ -17,21 +18,59 @@ class Pharmacy_billing extends MY_Controller {
         $this->template->render();
 	}
 
-    public function add_supplier(){
-        $supplier = array(
-            'vSupplierName' => $_POST['supplier_name'],
-            'vSupplierName_Tamil' => $_POST['supplier_name_tamil'],
-            'vPhoneNumber' => $_POST['phone'],
-            'vEmail' => $_POST['email'],
-            'vAddress' => $_POST['address'],
-            'vGSTINNo' => $_POST['gstno']
-        );
-        $this->pharmacy_billing_model->insert_supplier($supplier);
-        echo json_encode(array(
-            "statusCode"=>200
-        ));
-        exit;
-        // redirect(base_url('master/branch'));
+    public function add_pharmacy_fee(){
+        $head_office_id = $this->session->userdata('HeadOfficeId');
+        $branch_id = $this->session->userdata('BranchId');
+        $data['headoffice'] = $this->order_model->get_headOffice($head_office_id);
+        $data['branches'] = $this->order_model->get_branch($branch_id);
+        $data['customer'] = $this->order_model->get_customer($branch_id);
+        $data['salesman'] = $this->order_model->get_salesman($branch_id);
+        $data['category'] = $this->order_model->get_category();
+        $data['sales_order_number'] = $this->order_model->get_order_number();
+        $data['user'] = $this->order_model->get_all_user();
+        $data['grade'] = $this->order_model->get_grade();
+        $data['region'] = $this->order_model->get_regions();
+        $data['roles'] = $this->order_model->get_roles();
+        $data['state'] = $this->order_model->get_states();
+        $this->template->write_view('content', 'add_pharmacy_fees', $data);
+        $this->template->render();
+    }
+
+    public function edit_pharmacy_fee($id){
+        $data['sales_order_id'] = $id;
+        $head_office_id = $this->session->userdata('HeadOfficeId');
+        $branch_id = $this->session->userdata('BranchId');
+        $data['headoffice'] = $this->order_model->get_headOffice($head_office_id);
+        $data['salesman'] = $this->order_model->get_salesman($branch_id);
+        $data['branches'] = $this->order_model->get_branch($branch_id);
+        $data['category'] = $this->order_model->get_category();
+        $data['sales_order'] = $this->order_model->get_sales_details_by_id($id);
+        $data['customer'] = $this->order_model->get_customer();
+        $data['unit'] = $this->order_model->get_unit();
+        $this->template->write_view('content', 'edit_pharmacy_fees', $data);
+        $this->template->render();
+    }
+
+    public function view_pharmacy_fee($id){
+        $data['sales_order_id'] = $id;
+        $data['headoffice'] = $this->order_model->get_headoffice();
+        $data['category'] = $this->order_model->get_category();
+        $data['sales_order'] = $this->order_model->get_sales_details_by_id($id);
+        $data['customer'] = $this->order_model->get_customer();
+        $data['unit'] = $this->order_model->get_unit();
+        $this->template->write_view('content', 'view_pharmacy_fees', $data);
+        $this->template->render();
+    }
+
+    public function pharmacy_fee_return($id){
+        $data['sales_order_id'] = $id;
+        $data['headoffice'] = $this->order_model->get_headoffice();
+        $data['category'] = $this->order_model->get_category();
+        $data['sales_order'] = $this->order_model->get_sales_details_by_id($id);
+        $data['customer'] = $this->order_model->get_customer();
+        $data['unit'] = $this->order_model->get_unit();
+        $this->template->write_view('content', 'pharmacy_fees_return', $data);
+        $this->template->render();
     }
 
     public function get_suppliers(){
