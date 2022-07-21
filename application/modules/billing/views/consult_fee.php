@@ -14,10 +14,10 @@
         <div class="row">
             <div class="col-6">
                 <h3>Consultancy Fee</h3>
-                <a href="<?php echo base_url('billing/consulting_fee/add_consult_fee'); ?>" class="mnone"><button type="button" class="btn btn-sm btn-primary">Add Fee</button></a>
+                <a href="<?php echo base_url('billing/consulting_fee/add_consult_fee'); ?>" class="mnone"><button type="button" class="btn btn-sm btn-primary">Add Consultancy Fee</button></a>
             </div>
             <div class="col-6">
-            <a href="<?php echo base_url('billing/consulting_fee/add_consult_fee'); ?>" class="wnone pull-right"><button type="button" class="btn btn-sm btn-primary">Add Fee</button></a>
+            <a href="<?php echo base_url('billing/consulting_fee/add_consult_fee'); ?>" class="wnone pull-right"><button type="button" class="btn btn-sm btn-primary">Add Consultancy Fee</button></a>
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo base_url('master/dashboard')  ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a></li>
                 <li class="breadcrumb-item">Master</li>

@@ -17,7 +17,7 @@
     <div class="page-title">
         <div class="row">
             <div class="col-6">
-                <h3>Sales</h3>
+                <h3>Edit Sales</h3>
             </div>
             <div class="col-6">
                 <ol class="breadcrumb">
@@ -152,7 +152,7 @@
                         <div class="row">
                             <div class="col-sm-12 col-lg-12 col-xl-12">
                                 <div class="add-sales-table">
-                                    <button class="btn btn-success btn-block wnone mobile-add-btn" id="add">Add Product</button>
+                                    <button class="btn btn-t-success btn-block wnone mobile-add-btn" id="add">Add Product</button>
                                     <table class="table delivery-order basictable" id="table">
                                         <thead>
                                             <tr>
@@ -165,7 +165,7 @@
                                                 <th width="6%" class="text-center" scope="col">SGST</th>
                                                 <th width="6%" class="text-center" scope="col">IGST</th>
                                                 <th width="10%" class="text-right" scope="col">Net&nbsp;Value</th>
-                                                <th width="4%" scope="col" data-th="Remove"><b class="wnone">Remove</b> <button class="btn btn-success btn-sm" id="add"><i class="icofont icofont-plus"></i></button> <input type="hidden" name="sales_count" class="sales_count" value="<?php echo count($sales_order[0]['sales_details']) ?>"></th>
+                                                <th width="4%" scope="col" data-th="Remove"><b class="wnone">Remove</b> <button class="btn btn-t-success btn-sm" id="add"><i class="icofont icofont-plus"></i></button> <input type="hidden" name="sales_count" class="sales_count" value="<?php echo count($sales_order[0]['sales_details']) ?>"></th>
                                             </tr>
                                         </thead>                                        
                                         <?php foreach($sales_order[0]['sales_details'] as $key=>$order){ ?>
@@ -214,7 +214,7 @@
                                             <td scope="col">
                                                 <div class="row quantity-row">
                                                 <div class="col-md-7 wp-r-0"><input class="form-control quantity quantity_cls_<?php echo $key ?>" id="validationCustomUsername" value="<?php echo $order['iDeliveryQTY'] ?>" name="quantity[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ></div>
-                                                <div class="col-md-4 p-0-5"><span class="label label-success available_qty" > <?php echo ($order['product_qty']>0 ? $order['product_qty']:0)?></span></div>
+                                                <div class="col-md-4 p-0-5"><span class="label label-t-success available_qty" > <?php echo ($order['product_qty']>0 ? $order['product_qty']:0)?></span></div>
                                                 <input type="hidden" class='old_qty' value="<?php echo $order['iDeliveryQTY'] ?>" />
                                                 <input type="hidden" class="quantity-err">
                                                 <span class="ajax_response_result"></span>
@@ -309,7 +309,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><input type="submit" class="btn btn-success submit"> <a href="<?php echo base_url('order') ?>"><input class="btn btn-danger pull-left" type="button" value="Cancel"></a></div></div>
+                            <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><input type="submit" class="btn btn-t-success submit"> <a href="<?php echo base_url('order') ?>"><input class="btn btn-danger pull-left" type="button" value="Cancel"></a></div></div>
                         </div>                        
                     </div>
                     <!-- <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><input type="submit" class="btn btn-success"> <input class="btn btn-danger pull-left" type="reset" value="Cancel"></div></div> -->
@@ -427,7 +427,7 @@
         $(document).on('click', '#add', function(e){  
             e.preventDefault();
            i++;  
-           $('#table').append('<tr id="row'+i+'" class="dynamic-added"><td data-th="Category *" scope="col"><div class="category_field'+i+'"><div class="invalid-feedback">Please select a valid state.</div></div></td><td data-th="Product *" scope="col"><div class="relative"><input class="form-control product product_details_'+i+'" id="validationCustomUsername" name="product[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ><input type="hidden" class="product_id_'+i+' product_id" name="product_id[]"><input type="hidden" class="product_color_id product_color_id_'+i+'" name="product_color_id[]"><input type="hidden" name="taxable_cost[]" tabindex="-1" class="taxable_cost taxable_cost_cls_'+i+' form-control" /><div class="search-list"><ul class="suggesstion-box" data-id="'+i+'"></ul></div></div></td><td data-th="Unit*" scope="col"><div class="relative"><select class="form-select product_unit unit_'+i+'" name="unit[]" id="validationCustom04" required><option selected="" disabled="" value="">Choose...</option></select><span class="duplicate_value"></span><input type="hidden" class="duplicate_value_err"></div></td><td data-th="Price" scope="col"><div class=""><input class="form-control price price_'+i+'" id="validationCustomUsername" name="price[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div></td><td data-th="Quantity" scope="col"><div class="row quantity-row"><div class="col-md-7 wp-r-0"><input class="form-control quantity quantity_cls_'+i+'" id="validationCustomUsername" name="quantity[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div><div class="col-md-4 p-0-5"><span class="label label-success available_qty" > 0 </span></div><span class="ajax_response_result"></span><input type="hidden" class="quantity-err"></div></td><td data-th="CGST" scope="col"><div class=""><input class="form-control cgst cgst_cls_'+i+'" id="validationCustomUsername" name="cgst[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div></td><td data-th="SGST" scope="col"><div class=""><input class="form-control sgst sgst_cls_'+i+'" id="validationCustomUsername" name="sgst[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div></td><td data-th="IGST" scope="col"><div class=""><input class="form-control igst igst_cls_'+i+'" id="validationCustomUsername" name="igst[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ><div class="invalid-feedback">Field is required.</div></div></td><td data-th="Net Value" scope="col"><div class=""><input class="form-control net_value net_value_cls_'+i+'" id="validationCustomUsername" name="net_value[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div></td><td data-th="Remove"><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove btn-sm"><i class="icofont icofont-minus"></i></button></td></tr>');
+           $('#table').append('<tr id="row'+i+'" class="dynamic-added"><td data-th="Category *" scope="col"><div class="category_field'+i+'"><div class="invalid-feedback">Please select a valid state.</div></div></td><td data-th="Product *" scope="col"><div class="relative"><input class="form-control product product_details_'+i+'" id="validationCustomUsername" name="product[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ><input type="hidden" class="product_id_'+i+' product_id" name="product_id[]"><input type="hidden" class="product_color_id product_color_id_'+i+'" name="product_color_id[]"><input type="hidden" name="taxable_cost[]" tabindex="-1" class="taxable_cost taxable_cost_cls_'+i+' form-control" /><div class="search-list"><ul class="suggesstion-box" data-id="'+i+'"></ul></div></div></td><td data-th="Unit*" scope="col"><div class="relative"><select class="form-select product_unit unit_'+i+'" name="unit[]" id="validationCustom04" required><option selected="" disabled="" value="">Choose...</option></select><span class="duplicate_value"></span><input type="hidden" class="duplicate_value_err"></div></td><td data-th="Price" scope="col"><div class=""><input class="form-control price price_'+i+'" id="validationCustomUsername" name="price[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div></td><td data-th="Quantity" scope="col"><div class="row quantity-row"><div class="col-md-7 wp-r-0"><input class="form-control quantity quantity_cls_'+i+'" id="validationCustomUsername" name="quantity[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div><div class="col-md-4 p-0-5"><span class="label label-t-success available_qty" > 0 </span></div><span class="ajax_response_result"></span><input type="hidden" class="quantity-err"></div></td><td data-th="CGST" scope="col"><div class=""><input class="form-control cgst cgst_cls_'+i+'" id="validationCustomUsername" name="cgst[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div></td><td data-th="SGST" scope="col"><div class=""><input class="form-control sgst sgst_cls_'+i+'" id="validationCustomUsername" name="sgst[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div></td><td data-th="IGST" scope="col"><div class=""><input class="form-control igst igst_cls_'+i+'" id="validationCustomUsername" name="igst[]" type="text" placeholder="" aria-describedby="inputGroupPrepend"  ><div class="invalid-feedback">Field is required.</div></div></td><td data-th="Net Value" scope="col"><div class=""><input class="form-control net_value net_value_cls_'+i+'" id="validationCustomUsername" name="net_value[]" type="text" placeholder="" aria-describedby="inputGroupPrepend" required ></div></td><td data-th="Remove"><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove btn-sm"><i class="icofont icofont-minus"></i></button></td></tr>');
             $(".category_clone:first").clone().appendTo('.category_field'+i);
             $('.category_field'+i).find('.category_clone').prop('required',true);
         });
