@@ -865,3 +865,10 @@ table td.text-center{
 .modal-footer .btn-primary {
     float: right;
 }
+.btn-return {
+    background-color: #7c7cf4 !important;
+    border-color: #9999f4 !important;
+    padding: 2px 5px !important;
+    margin-top: -5px !important;
+    color: #fff !important;
+}
