@@ -309,7 +309,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><input type="submit" class="btn btn-success submit"> <a href="<?php echo base_url('order') ?>"><input class="btn btn-danger pull-left" type="button" value="Cancel"></a></div></div>
+                            <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><input type="submit" class="btn btn-success submit"> <a href="<?php echo base_url('billing/lab_fee') ?>"><input class="btn btn-danger pull-left" type="button" value="Cancel"></a></div></div>
                         </div>                        
                     </div>
                     <!-- <div class="card-footer text-end"> <div class="col-sm-12 col-lg-12 col-xl-12"><input type="submit" class="btn btn-success"> <input class="btn btn-danger pull-left" type="reset" value="Cancel"></div></div> -->
