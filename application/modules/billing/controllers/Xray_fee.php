@@ -62,26 +62,48 @@ class Xray_fee extends MY_Controller {
         $this->template->render();
     }
 
-    public function get_suppliers(){
+    public function get_xray_bills(){
         $data = $input_arr = array();
         $input_data = $this->input->post();
-        $list=$this->xray_fee_model->supplier_list();
+        $list=$this->order_model->order_list();
+        // echo"<pre>";print_r($list);exit;
         $sno = $input_data['start'] + 1;
         // echo "<pre>";print_r($list);exit;
         foreach ($list as $key=>$post) {
-            $delete = '<a href="" data-id="'.$post->iSupplierId.'" class="action-icon removeAttr " ><i class="fa fa-remove fs-5"></i></a>';
-            $edit = '<a href="" data-id="'.$post->iSupplierId.'" class="action-icon addAttr" data-bs-toggle="modal" data-bs-target="#kt_modal_edit_user"><i class="fa fa-edit fs-5"></i></a>';
+            // $order_date_timestamp = strtotime($post->dOrderedDate);
+            // $converted_ordered_date = date('d-m-Y ', $order_date_timestamp);   
+            // $created_date_timestamp = strtotime($post->salecreateddate);
+            // $converted_created_date = date('d-m-Y ', $order_date_timestamp);   
+            $delete = '<a href="" data-id="'.$post->iSalesOrderId.'" class="action-icon removeAttr " ><i class="fa fa-trash td-icon"></i></a>';
+            $edit = '<a href="'.base_url('billing/xray_fee/edit_xray_fee/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-pencil td-icon tm2"></i></a>';
+            $view = '<a href="'.base_url('billing/xray_fee/view_xray_fee/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><i class="fa fa-eye fs-5"></i></a>';
+            $return = "";
+            if($post->eDeliveryStatus == "Delivered"){
+                $edit = "";
+                $delete = "";
+                $return = '<a href="'.base_url('billing/xray_fee/consult_fee_return/').$post->iSalesOrderId.'" data-id="'.$post->iSalesOrderId.'" class="action-icon" ><button style="font-size: 11px;padding: 0px 8px;" class="btn btn-return">Return</button></a></a>';
+            }if($post->eDeliveryStatus == "Cancelled"){
+                $edit = "";
+                $delete = "";
+            }
             $row = array();
             $row[] = $sno++;
-            $row[] = $post->vSupplierName;
-            $row[] = $post->eStatus;
-            $row[] = $edit.$delete;         
+            // $row[] = $post->vProductName;   
+            // $row[] = $post->vName;
+            $row[] = $post->vSalesOrderNo;
+            $row[] = $post->vCustomerName;
+            $row[] = $post->fNetQty;
+            $row[] = $post->fNetCost;
+            $row[] = $post->ordereddate;
+            $row[] = $post->eDeliveryStatus;
+            $row[] = $post->salecreateddate;
+            $row[] = $view.$edit.$delete;
             $data[] = $row;
         }
         $output = array(    
             "draw" => $_POST['draw'],
-            "recordsTotal" => $this->xray_fee_model->count_all_suppliers(),
-            "recordsFiltered" => $this->xray_fee_model->count_all_suppliers(),
+            "recordsTotal" => $this->order_model->count_all_sales(),
+            "recordsFiltered" => $this->order_model->count_all_sales(),
             "data" => $data,
         );
         echo json_encode($output);

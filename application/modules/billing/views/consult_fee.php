@@ -190,7 +190,7 @@
             "lengthMenu": [ [10, 25, 50, 100, -1], [10, 25, 50, 100, 'All'] ],
 			"order":[], 
 			"ajax": {
-				url : "<?php echo base_url('order/get_sales_order'); ?>",
+				url : "<?php echo base_url('billing/consulting_fee/get_consult_bills'); ?>",
 				type: "POST"  
 			},
             "createdRow": function(row, data, dataIndex) {
