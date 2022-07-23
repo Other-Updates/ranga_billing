@@ -24,7 +24,7 @@ setTimeout(function(){
                 placeholder: "Select Branch"
             });
             $(".salesman-multiple").select2({
-                placeholder: "Select Salesman"
+                placeholder: "Select Staff Name"
             });
             $(".customer-multiple").select2({
                 placeholder: "Select Patient"
