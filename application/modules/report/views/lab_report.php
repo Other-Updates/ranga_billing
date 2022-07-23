@@ -13,13 +13,13 @@
     <div class="page-title">
         <div class="row">
             <div class="col-md-6 col-sm-12">
-                <h3>Sales Detail Report</h3>
+                <h3>Consult Report</h3>
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Report</li>
-                <li class="breadcrumb-item active">Sales Detail Report</li>
+                <li class="breadcrumb-item active">Consult Report</li>
                 </ol>
             </div>
         </div>
@@ -136,7 +136,7 @@
             "pageLength": 50,
             "order":[], 
             "ajax": {
-                url : "<?php echo base_url('report/salesdetails/salesdetail_data'); ?>",
+                url : "<?php echo base_url('report/lab_report/lab_data'); ?>",
                 data : {salesman:salesman,distributor:distributor,from_date:from_date,to_date:to_date,status:status},
                 type: "POST",
             },

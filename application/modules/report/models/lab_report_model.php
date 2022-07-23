@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Salesdetails_model extends MY_Controller {
+class Lab_report_model extends MY_Controller {
     private $table = 'cic_sales_order_details';
     private $column_order = array('so.vSalesOrderNo','cu.vCustomerName','br.vBranchName','pr.vProductName','sod.iDeliveryQTY','pru.vProductUnitName','so.dOrderedDate','so.dCreatedDate','so.eDeliveryStatus'); //set column field database for datatable orderable
     private $column_search = array('so.vSalesOrderNo','cu.vCustomerName','br.vBranchName','pr.vProductName','sod.iDeliveryQTY','pru.vProductUnitName','so.dOrderedDate','so.dCreatedDate','so.eDeliveryStatus'); //set column field database for datatable searchable 
