@@ -22,12 +22,12 @@
     <div class="page-title">
         <div class="row">
             <div class="col-8">
-                <h3>Sales Order View</h3>
+                <h3>Xray Fee View</h3>
             </div>
             <div class="col-4">
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
-                <li class="breadcrumb-item active">Sales Order View</li>
+                <li class="breadcrumb-item active">Xray Fee View</li>
                 </ol>
             </div>
         </div>

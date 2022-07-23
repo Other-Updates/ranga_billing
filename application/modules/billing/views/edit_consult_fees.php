@@ -17,13 +17,13 @@
     <div class="page-title">
         <div class="row">
             <div class="col-6">
-                <h3>Sales</h3>
+                <h3>Edit Consult Fee</h3>
             </div>
             <div class="col-6">
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
-                <li class="breadcrumb-item">Report</li>
-                <li class="breadcrumb-item active">Edit Sales</li>
+                <li class="breadcrumb-item">Billing</li>
+                <li class="breadcrumb-item active">Edit Consult Fee</li>
                 </ol>
             </div>
         </div>
