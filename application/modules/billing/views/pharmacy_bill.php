@@ -40,7 +40,7 @@
                                 <!-- <th>Product</th>
                                 <th>Salesman</th> -->
                                 <th width="15%">PB Number</th>
-                                <th width="20%">Customer</th> 
+                                <th width="20%">Patient</th> 
                                 <th width="15%">Quantity</th>
                                 <th width="15%" class="p-r-30">Sales Amount</th>
                                 <th width="10%" class="d-none">Delivery Date</th>

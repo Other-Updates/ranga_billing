@@ -189,7 +189,7 @@
                       <ul class="sidebar-submenu users-master-submenu">
                         <li><a class="lan user-role" href="<?php echo base_url('master/user_role') ?>">User Role</a></li>
                         <!-- <li><a class="lan users" href="<?php echo base_url('master/user/salesman') ?>">Users</a></li> -->
-                        <li><a class="lan customers" href="<?php echo base_url('master/distributor'); ?>">Customers</a></li>  
+                        <li><a class="lan customers" href="<?php echo base_url('master/distributor'); ?>">Patients</a></li>  
                         <li><a class="lan suppliers" href="<?php echo base_url('master/supplier'); ?>">Suppliers</a></li>  
                         <li><a class="lan Staff" href="<?php echo base_url('master/staffname'); ?>">Staff Name</a></li>  
                       </ul>

@@ -90,7 +90,7 @@
                             </div>
                             <?php if($this->session->userdata('UserRole') == 1 || $this->session->userdata('UserRole') == 2){ ?>
                             <div class="col-md-4">
-                                <label class="form-label" for="validationCustom04">Salesman</label><span style="color:red">*</span>
+                                <label class="form-label" for="validationCustom04">Staff Name</label><span style="color:red">*</span>
                                 <select class="form-select disabled salesman salesman-multiple salesman_id" name="salesman" id="validationCustom04" required>
                                     <option selected disbaled value="">Choose</option>
                                     <?php foreach ($salesman as $salesmans){ ?>

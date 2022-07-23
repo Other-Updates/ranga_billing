@@ -27,7 +27,7 @@ setTimeout(function(){
                 placeholder: "Select Salesman"
             });
             $(".customer-multiple").select2({
-                placeholder: "Select Customer"
+                placeholder: "Select Patient"
             });
 
             //Limited Numbers
