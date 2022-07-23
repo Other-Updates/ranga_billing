@@ -44,7 +44,7 @@
                     <!-- <form id="reference_form"> -->
                         <div class="row row-8 g-3">
                             <div class="col-md-3">
-                                <label class="form-label" for="validationCustom04">Salesman</label>
+                                <label class="form-label" for="validationCustom04">Staff Name</label>
                                 <select class="form-select salesman" name ="salesman" id="validationCustom04" >
                                     <option selected="" value="">Choose...</option>
                                     <?php foreach($salesman as $sale){ ?>
@@ -54,7 +54,7 @@
                                 <div class="invalid-feedback">Please select a valid state.</div>
                             </div>
                             <div class="col-md-3">
-                                <label class="form-label" for="validationCustom04">Customer</label>
+                                <label class="form-label" for="validationCustom04">Patient</label>
                                 <select class="form-select distributor" name ="customer" id="validationCustom04" >
                                     <option selected="" value="">Choose...</option>
                                     <?php foreach($distributor as $distribute){ ?>
@@ -123,7 +123,7 @@
                                 <tr>
                                     <!-- <th>Sno</th> -->
                                     <th>SO#</th>
-                                    <th>Customer</th>
+                                    <th>Patient</th>
                                     <th>Head office</th>
                                     <th>Branch</th>
                                     <th class="sum_qty">QTY</th>
@@ -208,7 +208,7 @@ $(".alert-danger").delay(3200).fadeOut(300);
             },
             "createdRow": function(row, data, dataIndex) {
                 $(row).find('td:eq(0)').attr('data-th', 'SO#');
-                $(row).find('td:eq(1)').attr('data-th', 'Customer');
+                $(row).find('td:eq(1)').attr('data-th', 'Patient');
                 $(row).find('td:eq(2)').attr('data-th', 'Head office');
                 $(row).find('td:eq(3)').attr('data-th', 'Branch');
                 $(row).find('td:eq(4)').attr('data-th', 'Qty');
