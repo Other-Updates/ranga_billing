@@ -64,7 +64,7 @@
                             </div>
                             <?php if($this->session->userdata('UserRole') == 1 || $this->session->userdata('UserRole') == 2){ ?>
                             <div class="col-md-4">
-                                <label class="form-label" for="validationCustom04">Salesman</label><br>
+                                <label class="form-label" for="validationCustom04">Staff Name</label><br>
                                 <label class="value-lable salesman_id"><?php echo $sales_order[0]['vName']; ?></label>
                             </div>
                             <?php } ?>

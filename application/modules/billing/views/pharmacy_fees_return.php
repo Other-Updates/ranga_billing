@@ -74,7 +74,7 @@
                             </div>
                             <?php if($this->session->userdata('UserRole') == 1 || $this->session->userdata('UserRole') == 2){ ?>
                             <div class="col-md-4">
-                                <label class="form-label" for="validationCustom04">Salesman</label>
+                                <label class="form-label" for="validationCustom04">Staff Name</label>
                                 <select class="form-select salesman_id" name="salesman" disabled id="validationCustom04">
                                     <option  value="<?php echo $sales_order[0]['iSalesmanId'] ?>"><?php echo $sales_order[0]['vName']; ?></option>
                                     <input type="hidden" value="<?php echo $sale_order['iSalesmanId'] ?>">

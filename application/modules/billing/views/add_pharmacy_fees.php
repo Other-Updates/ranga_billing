@@ -84,7 +84,7 @@
                                 <?php }?>
                             </div>
                             <div class="col-md-4">
-                            <label class="form-label" for="validationCustom04">Customer</label><span style="color:red">*</span>
+                            <label class="form-label" for="validationCustom04">Patient</label><span style="color:red">*</span>
                             <div class="d-flex">
                                 <select class="form-select disabled customer-multiple customer_id" name="customer" id="validationCustom04" required>
                                     <option selected disbaled value="">Choose</option>
@@ -93,7 +93,7 @@
                                     <?php } ?>
                                 </select>                                
                                 <div class="input-group-addon">
-                                    <button type="button" class="btn btn-primary btn-xs btn-fw" title="Add Customer" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="fa fa-plus"></i></button>
+                                    <button type="button" class="btn btn-primary btn-xs btn-fw" title="Add Patient" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user"><i class="fa fa-plus"></i></button>
                                 </div>
                                 <br><div class="invalid-feedback" style="color:red">Field is required.</div>
                             </div>
@@ -105,7 +105,7 @@
                             </div> -->
                             <?php if($this->session->userdata('UserRole') == 1 || $this->session->userdata('UserRole') == 2){ ?>
                             <div class="col-md-4">
-                                <label class="form-label" for="validationCustom04">Salesman</label><span style="color:red">*</span>
+                                <label class="form-label" for="validationCustom04">Staff Name</label><span style="color:red">*</span>
                                 <select class="form-select disabled salesman salesman-multiple salesman_id" name="salesman" id="validationCustom04" required>
                                     <option selected disbaled value="">Choose</option>
                                     <?php foreach ($salesman as $salesmans){ ?>
@@ -328,7 +328,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Add Customer</h5>
+                <h5 class="modal-title">Add Patient</h5>
                 <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" id="distributor_form" novalidate="" method="post" enctype="multipart/form-data" >
@@ -336,7 +336,7 @@
                 <input type="hidden" name="user_id" value="<?php echo $this->session->userdata('LoggedId'); ?>">
                 <div class="row g-3">
                     <div class="col-md-6">
-                        <label class="form-label" for="validationCustom03">Customer Name</label>
+                        <label class="form-label" for="validationCustom03">Patient Name</label>
                         <input class="form-control add_name" id="validationCustom03" type="text" name="name" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
@@ -420,7 +420,7 @@
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label" for="validationCustom04">Salesman</label>
+                        <label class="form-label" for="validationCustom04">Staff Name</label>
                         <select class="form-select add_salesman_id" name ="salesman_id" id="validationCustom04" required="">
                             <option selected="" disabled="" value="">Choose...</option>
                             <?php foreach($user as $users){ ?>

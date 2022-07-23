@@ -13,14 +13,14 @@
     <div class="page-title">
         <div class="row">
             <div class="col-6">
-                <h3>Customers</h3>
-                <button type="button" class="btn btn-sm btn-primary mnone" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Customers</button>
+                <h3>Patients</h3>
+                <button type="button" class="btn btn-sm btn-primary mnone" data-bs-toggle="modal" data-bs-target="#kt_modal_add_user">Add Patient</button>
             </div>
             <div class="col-6">
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Master</li>
-                <li class="breadcrumb-item active">Customers</li>
+                <li class="breadcrumb-item active">Patient</li>
                 </ol>
             </div>
         </div>
@@ -36,7 +36,7 @@
                         <thead>
                             <tr>
                             <th>Sno</th>
-                            <th>Customer Name</th>
+                            <th>Patient Name</th>
                             <th>Type</th>
                             <th>Grade</th>
                             <th>Company Name</th>
@@ -63,7 +63,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Add Customer</h5>
+                <h5 class="modal-title">Add Patient</h5>
                 <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" id="distributor_form" novalidate="" method="post" enctype="multipart/form-data" >
@@ -86,7 +86,7 @@
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
                     <div class="col-md-6">
-                        <label class="form-label" for="validationCustom03">Customer Name</label>
+                        <label class="form-label" for="validationCustom03">Patient Name</label>
                         <input class="form-control add_name" id="validationCustom03" type="text" name="name" placeholder="" required="">
                         <div class="invalid-feedback">Field is required.</div>
                     </div>
@@ -209,7 +209,7 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Edit Customer</h5>
+                <h5 class="modal-title">Edit Patient</h5>
                 <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close" data-bs-original-title="" title=""></button>
             </div>
             <form class="needs-validation" novalidate="" method="post" enctype="multipart/form-data" >
@@ -233,7 +233,7 @@
                         </div>
                         <div class="col-md-6">
                             <input type="hidden" class="customer_id" name="distributorid" value="">
-                            <label class="form-label name" for="validationCustom03">Customer Name</label>
+                            <label class="form-label name" for="validationCustom03">Patient Name</label>
                             <input class="form-control edit_name" id="validationCustom03" type="text" name="name" placeholder="" required="">
                             <div class="invalid-feedback">Field is required.</div>
                         </div>
@@ -509,7 +509,7 @@
 			},
             "createdRow": function(row, data, dataIndex) {
                 $(row).find('td:eq(0)').attr('data-th', 'S.No');
-                $(row).find('td:eq(1)').attr('data-th', 'Customer Name');
+                $(row).find('td:eq(1)').attr('data-th', 'Patient Name');
                 $(row).find('td:eq(2)').attr('data-th', 'Type');
                 $(row).find('td:eq(3)').attr('data-th', 'Grade');
                 $(row).find('td:eq(4)').attr('data-th', 'Company Name');
