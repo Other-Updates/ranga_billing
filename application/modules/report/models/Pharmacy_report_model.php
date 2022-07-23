@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Reference_report_model extends MY_Controller {
+class Pharmacy_report_model extends MY_Controller {
     private $table = 'sales_order_details';
     private $column_order = array('cic_sales_order.vSalesOrderNo','cu.vCustomerName','ho.vHeadOfficeName','br.vBranchName','cic_sales_order.fNetQty','cic_sales_order.CGST','cic_sales_order.SGST','cic_sales_order.fNetCostwithoutGST','cic_sales_order.fNetCost','receipt_paid','receipt_discount','sortbalance','cic_sales_order.vPayemntStatus','cic_sales_order.dOrderedDate','cic_sales_order.dCreatedDate','cic_sales_order.eDeliveryStatus'); //set column field database for datatable orderable
     private $column_search = array('cic_sales_order.vSalesOrderNo','cu.vCustomerName','ho.vHeadOfficeName','br.vBranchName','cic_sales_order.fNetQty','cic_sales_order.CGST','cic_sales_order.SGST','cic_sales_order.fNetCostwithoutGST','cic_sales_order.fNetCost','cic_sales_order.vPayemntStatus','cic_sales_order.dOrderedDate','cic_sales_order.dCreatedDate','cic_sales_order.eDeliveryStatus'); //set column field database for datatable searchable 

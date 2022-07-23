@@ -247,12 +247,12 @@
                     <li class="sidebar-list">
                       <label class="badge badge-success"></label><a class="sidebar-link sidebar-title report" href="#"><i class="fa fa-pie-chart icon"></i><span class="lan">Report</span></a>
                       <ul class="sidebar-submenu report-submenu">
-                        <li><a class="lan " href="#">Pharmacy Bill Report</a></li>
-                        <li><a class="lan " href="#">XRay Report</a></li>
-                        <li><a class="lan " href="#">Lab Report</a></li>
-                        <li><a class="lan " href="#">Consultancy Report</a></li>
-                        <li><a class="lan " href="#">Pharmacy Stock Report</a></li>
-                        <li><a class="lan " href="#">Warehouse Report</a></li>
+                        <li><a class="lan " href="<?php echo base_url('report/pharmacy_report') ?>">Pharmacy Bill Report</a></li>
+                        <li><a class="lan " href="<?php echo base_url('report/xray_report') ?>">XRay Report</a></li>
+                        <li><a class="lan " href="<?php echo base_url('report/lab_report') ?>">Lab Report</a></li>
+                        <li><a class="lan " href="<?php echo base_url('report/consult_report') ?>">Consultancy Report</a></li>
+                        <li><a class="lan " href="<?php echo base_url('report/stock_report') ?>">Pharmacy Stock Report</a></li>
+                        <li><a class="lan " href="<?php echo base_url('report/stock_report/warehouse_stock_report') ?>">Warehouse Report</a></li>
                       </ul>
                     </li>
                     <li class="sidebar-list">

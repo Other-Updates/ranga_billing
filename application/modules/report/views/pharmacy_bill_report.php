@@ -21,13 +21,13 @@
     <div class="page-title">
         <div class="row">
             <div class="col-6">
-                <h3>Sales Report</h3>
+                <h3>Pharmacy Bill Report</h3>
             </div>
             <div class="col-6">
                 <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="<?php echo base_url('dashboard')  ?>"><i class="fa fa-home"></i></a></li>
                 <li class="breadcrumb-item">Report</li>
-                <li class="breadcrumb-item active">Sales Report</li>
+                <li class="breadcrumb-item active">Pharmacy Bill Report</li>
                 </ol>
                 <?php if ($this->session->flashdata('error')) { ?>
                 <div class="alert alert-danger"> <?= $this->session->flashdata('error') ?> </div>
@@ -202,7 +202,7 @@ $(".alert-danger").delay(3200).fadeOut(300);
             "pageLength": 50,
             "order":[], 
             "ajax": {
-                url : "<?php echo base_url('report/reference_report/get_reference'); ?>",
+                url : "<?php echo base_url('report/pharmacy_report/get_reference'); ?>",
                 data : {salesman:salesman,distributor:distributor,from_date:from_date,to_date:to_date,status:status,payment_status:payment_status},
                 type: "POST",
             },
