@@ -11,7 +11,7 @@ class Purchase_receipt extends MX_Controller {
          }
          parent::__construct();
          $this->load->model('purchase_receipt/purchase_receipt_model'); 
-         $this->load->library('mpdf');
+         //$this->load->library('mpdf');
      }
 
     public function index() {
